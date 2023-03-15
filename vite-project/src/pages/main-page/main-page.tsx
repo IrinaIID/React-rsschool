@@ -1,11 +1,13 @@
-import './main.css';
+import Header from '../../components/heder/header';
+import React from 'react';
 
-function Main() {
 
-  return (
-    <div className="main">
-    </div>
-  );
+export default class MainPage extends React.Component {
+  render() {
+    return (
+      <div className="main-page-all">
+        <Header />
+      </div>
+    );
+  }
 }
-
-export default Main;
