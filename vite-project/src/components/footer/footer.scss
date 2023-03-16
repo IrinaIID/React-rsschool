@@ -1,0 +1,38 @@
+:root {
+  --main-bg-color: #1E8487;
+}
+
+.footer-all {
+  height: 120px;
+  width: 100%;
+  background-color: var(--main-bg-color);
+  font-family: Italiana;
+}
+
+.footer-container {
+  max-width: 1400px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.my-info-block {
+  display: flex;
+  align-items: center;
+}
+
+.link-my-github,
+.link-course {
+  margin: 0 20px 0 0;
+  color: #ffffff;
+}
+
+.p-year {
+  margin: 0;
+  font-size: 24px;
+}
