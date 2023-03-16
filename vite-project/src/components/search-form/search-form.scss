@@ -1,0 +1,34 @@
+.search-form-all {
+  width: 100%;
+  display: flex;
+}
+
+.input-search,
+.search-btn {
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  background-color: #ffffff;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.input-search {
+  min-width: 600px;
+  padding: 20px;
+}
+
+.search-btn {
+  width: 60px;
+  box-shadow: 4px 4px 20px rgba(30, 132, 135, 0.34);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+  transition: all 0.3s;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #1e83872c;
+  }
+}
