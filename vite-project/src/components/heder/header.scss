@@ -1,10 +1,67 @@
+:root {
+  --main-bg-color: #1E8487;
+}
+
 .header-all {
-  height: 50px;
+  height: 60px;
   width: 100%;
-  background-color: aquamarine;
+  background-color: var(--main-bg-color);
   font-family: Italiana;
 }
 
-h1 {
-  font-family: Italiana;
+.header-container {
+  max-width: 1400px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0 10px 0 0;
+  background: linear-gradient(270deg, #EFEFEF 0.75%, #FFFFFF 99.16%);
+}
+
+.navigation-header-all {
+  max-width: 290px;
+  height: 100%;
+  border-radius: 0 10px 0 0;
+  display: flex;
+  background-color: #E4E4E4;
+}
+
+.block-nav {
+  border-radius: 0 10px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  width: 140px;
+}
+
+.block-nav-main {
+  margin: 0;
+  background-color: #C7C7C7;
+}
+
+.p-link-nav {
+  color: #000000;
+  font-size: 18px;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+
+.decoration-header-all {
+  width: 48px;
+  height: 100%;
+  background-color: #C7C7C7;
+  border-radius: 0 10px 0 0;
+
+  .decoration-block {
+    height: 100%;
+    width: 20px;
+    background-color: #E4E4E4;
+    border-radius: 0 10px 0 0;
+  }
 }
