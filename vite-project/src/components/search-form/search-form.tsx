@@ -39,9 +39,8 @@ export default class SearchForm extends React.Component<State> {
         </div>
         <div>
           <button type="submit" className="search-btn">
-            <img src={Search} alt="" />
+            <img src={Search} alt="search" />
           </button>
-          {/* <input type="submit" className="search-btn" value="search" /> */}
         </div>
       </form>
     );

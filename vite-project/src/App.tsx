@@ -4,6 +4,7 @@ import './App.scss';
 import './styles/entry.scss'
 import MainPage from './pages/main-page/main-page';
 import Page404 from './pages/404-page/404-page';
+import AboutPage from './pages/about-page/about-page';
 
 function App() {
 
@@ -11,7 +12,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path={ROUTES.main} element={<MainPage />} />
-        <Route path={ROUTES.about} element={<h2>about us</h2>} />
+        <Route path={ROUTES.about} element={<AboutPage />} />
         <Route path="*" element={<Page404 />} />
       </Routes>
     </BrowserRouter>
