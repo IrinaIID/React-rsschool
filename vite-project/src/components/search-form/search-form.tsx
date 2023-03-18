@@ -11,9 +11,9 @@ export default class SearchForm extends React.Component<State> {
     text: localStorage.getItem('searchInput') || '',
   };
 
-  onChange = (e: React.FormEvent<HTMLInputElement>): void => {
-    this.setState({ text: e.currentTarget.value });
-  };
+  handleOnChange(e: React.FormEvent<HTMLInputElement>) {
+    this.setState({ text: e.currentTarget.value })
+  }
 
   render() {
     return (
@@ -32,8 +32,8 @@ export default class SearchForm extends React.Component<State> {
         <div>
           <input type="text" className="input-search" value={this.state.text}
             onInput={(e) => {
-              this.onChange(e);
-              localStorage.setItem('searchInput', this.state.text);
+              this.handleOnChange(e);
+              localStorage.setItem('searchInput', this.state.text)
             }}
           />
         </div>

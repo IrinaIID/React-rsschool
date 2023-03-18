@@ -3,6 +3,7 @@ import { ROUTES } from './utils/const/const';
 import './App.scss';
 import './styles/entry.scss'
 import MainPage from './pages/main-page/main-page';
+import Page404 from './pages/404-page/404-page';
 
 function App() {
 
@@ -11,7 +12,7 @@ function App() {
       <Routes>
         <Route path={ROUTES.main} element={<MainPage />} />
         <Route path={ROUTES.about} element={<h2>about us</h2>} />
-        <Route path="*" element={<h2>not found</h2>} />
+        <Route path="*" element={<Page404 />} />
       </Routes>
     </BrowserRouter>
   );
