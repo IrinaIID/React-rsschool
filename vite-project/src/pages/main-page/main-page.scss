@@ -12,3 +12,11 @@
   max-width: 1000px;
   margin-top: 60px;
 }
+
+.cards-block {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+  margin-top: 100px;
+}
