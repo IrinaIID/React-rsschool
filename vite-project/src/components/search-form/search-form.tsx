@@ -1,6 +1,7 @@
-import React, { ChangeEvent } from 'react';
+import React from 'react';
 import './search-form.scss';
 import Search from '../../assets/img/search.png';
+import { URL_TO_SSEND } from '../../utils/const/const';
 
 type State = {
   text: string;
@@ -12,33 +13,36 @@ export default class SearchForm extends React.Component<State> {
   };
 
   handleOnChange(e: React.FormEvent<HTMLInputElement>) {
-    this.setState({ text: e.currentTarget.value })
+    this.setState({ text: e.currentTarget.value });
+  }
+
+  handelClearInput() {
+    this.setState({ text: '' });
   }
 
   render() {
     return (
-      <form
-        className="search-form-all"
-        ref="#"
-        onSubmit={(e: React.SyntheticEvent) => {
-          // e.preventDefault();
-          localStorage.clear();
-          // const target = e.target as typeof e.target & {
-          //   text: { value: string };
-          // };
-          // const text = target.text.value;
-        }}
-      >
+      <form className="search-form-all" ref={URL_TO_SSEND} >
         <div>
-          <input type="text" className="input-search" value={this.state.text}
+          <input
+            type="text"
+            className="input-search"
+            value={this.state.text}
             onInput={(e) => {
               this.handleOnChange(e);
-              localStorage.setItem('searchInput', this.state.text)
+              localStorage.setItem('searchInput', this.state.text);
             }}
           />
         </div>
         <div>
-          <button type="submit" className="search-btn">
+          <button
+            onClick={(e: React.SyntheticEvent) => {
+              e.preventDefault();
+              localStorage.clear();
+              this.handelClearInput();
+            }}
+            type="submit" className="search-btn"
+          >
             <img src={Search} alt="search" />
           </button>
         </div>

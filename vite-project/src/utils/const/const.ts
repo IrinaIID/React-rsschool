@@ -3,4 +3,6 @@ const ROUTES = {
   about: '/about',
 };
 
-export { ROUTES }
+const URL_TO_SSEND = '3';
+
+export { ROUTES, URL_TO_SSEND };

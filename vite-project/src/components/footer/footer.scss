@@ -19,6 +19,16 @@
   justify-content: space-between;
   color: #ffffff;
   font-size: 20px;
+
+  @media screen and (max-width: 1450px) {
+    padding: 0 20px;
+  }
+
+  @media screen and (max-width: 550px) {
+    flex-direction: column;
+    justify-content: center;
+  }
+
 }
 
 .my-info-block {

@@ -4,7 +4,6 @@ import { ROUTES } from '../../utils/const/const';
 import './header.scss';
 
 export default class NavigationHeader extends React.Component {
-
   render() {
     return (
       <div className="navigation-header-all">

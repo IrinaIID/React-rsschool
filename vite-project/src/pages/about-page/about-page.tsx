@@ -4,7 +4,6 @@ import React from 'react';
 import './about-page.scss';
 
 export default class AboutPage extends React.Component {
-
   render() {
     return (
       <div className="page-about-all">

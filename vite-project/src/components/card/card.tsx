@@ -1,20 +1,18 @@
-import { CARDS_INFO } from '../../data/cards-info';
 import React from 'react';
-import './card.scss'
-
+import './card.scss';
 
 interface DefaultProps {
-  picture: string
-  name: string
-  year: string
+  picture: string;
+  name: string;
+  year: string;
 }
-interface Props extends DefaultProps {}
+type Props = DefaultProps;
 
 export default class Card extends React.Component<Props> {
   constructor(props: Props) {
     super(props);
 
-    props.picture
+    props.picture;
   }
 
   render() {

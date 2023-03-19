@@ -1,13 +1,12 @@
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import { ROUTES } from './utils/const/const';
 import './App.scss';
-import './styles/entry.scss'
+import './styles/entry.scss';
 import MainPage from './pages/main-page/main-page';
 import Page404 from './pages/404-page/404-page';
 import AboutPage from './pages/about-page/about-page';
 
 function App() {
-
   return (
     <BrowserRouter>
       <Routes>

@@ -10,79 +10,78 @@ import Helper from '../assets/img/cards/helper.webp';
 import Github from '../assets/img/cards/github.webp';
 import Feature from '../assets/img/cards/feature.webp';
 
-
 type Card = {
-  id: number
-  name: string
-  year: string
-  picture: string
-}
+  id: number;
+  name: string;
+  year: string;
+  picture: string;
+};
 
 export const CARDS_INFO: Card[] = [
   {
     id: 0,
     name: 'Congrats',
     year: '2022',
-    picture: Congrats
+    picture: Congrats,
   },
   {
     id: 1,
     name: 'Activist',
     year: '2022',
-    picture: Activist
+    picture: Activist,
   },
   {
     id: 2,
     name: 'Finished work',
     year: '2023',
-    picture: Finish
+    picture: Finish,
   },
   {
     id: 3,
     name: 'Deadline',
     year: '2020',
-    picture: Deadline
+    picture: Deadline,
   },
   {
     id: 4,
     name: 'Expert',
     year: '2021',
-    picture: Expert
+    picture: Expert,
   },
   {
     id: 5,
     name: 'Git problem',
     year: '2022',
-    picture: Git
+    picture: Git,
   },
   {
     id: 6,
     name: 'Slothzy',
     year: '2023',
-    picture: Slothzy
+    picture: Slothzy,
   },
   {
     id: 7,
     name: 'Hugs with AWS',
     year: '2023',
-    picture: Aws
+    picture: Aws,
   },
   {
     id: 8,
     name: 'Helper',
     year: '2023',
-    picture: Helper
+    picture: Helper,
   },
   {
     id: 9,
     name: 'Github friends',
     year: '2020',
-    picture: Github
+    picture: Github,
   },
   {
     id: 10,
     name: 'Feature in disguise',
     year: '2021',
-    picture: Feature
-  }
-]
+    picture: Feature,
+  },
+];

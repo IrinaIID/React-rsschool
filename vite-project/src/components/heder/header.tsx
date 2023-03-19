@@ -4,7 +4,6 @@ import './header.scss';
 import NavigationHeader from './navigation-header';
 
 export default class Header extends React.Component {
-
   render() {
     return (
       <div className="header-all">
