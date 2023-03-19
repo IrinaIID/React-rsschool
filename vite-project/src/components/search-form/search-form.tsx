@@ -12,8 +12,11 @@ export default class SearchForm extends React.Component<State> {
     text: localStorage.getItem('searchInput') || '',
   };
 
+
   handleOnChange(e: React.FormEvent<HTMLInputElement>) {
-    this.setState({ text: e.currentTarget.value });
+    this.setState({ text: e.currentTarget.value }, () => {
+      localStorage.setItem('searchInput', this.state.text);
+    });
   }
 
   handelClearInput() {
@@ -30,7 +33,6 @@ export default class SearchForm extends React.Component<State> {
             value={this.state.text}
             onInput={(e) => {
               this.handleOnChange(e);
-              localStorage.setItem('searchInput', this.state.text);
             }}
           />
         </div>
