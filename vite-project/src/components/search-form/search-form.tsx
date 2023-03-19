@@ -12,7 +12,6 @@ export default class SearchForm extends React.Component<State> {
     text: localStorage.getItem('searchInput') || '',
   };
 
-
   handleOnChange(e: React.FormEvent<HTMLInputElement>) {
     this.setState({ text: e.currentTarget.value }, () => {
       localStorage.setItem('searchInput', this.state.text);
@@ -25,7 +24,7 @@ export default class SearchForm extends React.Component<State> {
 
   render() {
     return (
-      <form className="search-form-all" ref={URL_TO_SSEND} >
+      <form className="search-form-all" ref={URL_TO_SSEND}>
         <div>
           <input
             type="text"
@@ -43,7 +42,8 @@ export default class SearchForm extends React.Component<State> {
               localStorage.clear();
               this.handelClearInput();
             }}
-            type="submit" className="search-btn"
+            type="submit"
+            className="search-btn"
           >
             <img src={Search} alt="search" />
           </button>
