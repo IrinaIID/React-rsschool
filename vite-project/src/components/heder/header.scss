@@ -25,7 +25,7 @@
   height: 100%;
   border-radius: 0 10px 0 0;
   display: flex;
-  background-color: #E4E4E4;
+  background-color: var(--main-bg-color);
 }
 
 .block-nav {
@@ -38,8 +38,13 @@
 }
 
 .block-nav-main {
+  border-top-right-radius: 0;
   margin: 0;
   background-color: #C7C7C7;
+}
+
+.block-nav-about {
+  background-color: #E4E4E4;
 }
 
 .p-link-nav {
@@ -51,6 +56,10 @@
   }
 }
 
+.p-link-nav-forms {
+  color: #ffffff;
+  padding: 0 15px;
+}
 
 .decoration-header-all {
   width: 48px;

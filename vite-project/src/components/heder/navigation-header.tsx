@@ -12,9 +12,14 @@ export default class NavigationHeader extends React.Component {
             <p className="p-link-nav">main</p>
           </Link>
         </div>
-        <div className="block-nav">
+        <div className="block-nav block-nav-about">
           <Link to={ROUTES.about}>
             <p className="p-link-nav">about us</p>
+          </Link>
+        </div>
+        <div className="forms-link-block">
+          <Link to={ROUTES.forms}>
+            <p className="p-link-nav p-link-nav-forms">forms</p>
           </Link>
         </div>
       </div>

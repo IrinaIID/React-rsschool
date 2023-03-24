@@ -15,6 +15,7 @@ export default class Page404 extends React.Component {
             <p className="p-404">return to</p>
             <Link to={ROUTES.main}>main</Link>
             <Link to={ROUTES.about}>about</Link>
+            <Link to={ROUTES.forms}>forms</Link>
           </div>
         </div>
       </div>

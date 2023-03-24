@@ -1,10 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1679254734387" clover="3.2.0">
-  <project timestamp="1679254734388" name="All files">
-    <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1" elements="2" coveredelements="2" complexity="0" loc="1" ncloc="1" packages="1" files="1" classes="1"/>
-    <file name="footer.tsx" path="E:/1 ДИСК E/JavaScript/Stage-react/task-1/React-rsschool/vite-project/src/components/footer/footer.tsx">
+<coverage generated="1679429381102" clover="3.2.0">
+  <project timestamp="1679429381103" name="All files">
+    <metrics statements="25" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="17" coveredmethods="1" elements="44" coveredelements="2" complexity="0" loc="25" ncloc="25" packages="10" files="13" classes="13"/>
+    <package name="src">
+      <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="App.tsx" path="E:/1 ДИСК E/JavaScript/Stage-react/task-1/React-rsschool/vite-project/src/App.tsx">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="10" count="0" type="stmt"/>
+      </file>
+      <file name="main.tsx" path="E:/1 ДИСК E/JavaScript/Stage-react/task-1/React-rsschool/vite-project/src/main.tsx">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="6" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.card">
+      <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+      <file name="card.tsx" path="E:/1 ДИСК E/JavaScript/Stage-react/task-1/React-rsschool/vite-project/src/components/card/card.tsx">
+        <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.footer">
       <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <line num="6" count="1" type="stmt"/>
-    </file>
+      <file name="footer.tsx" path="E:/1 ДИСК E/JavaScript/Stage-react/task-1/React-rsschool/vite-project/src/components/footer/footer.tsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="6" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.heder">
+      <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
+      <file name="decoration-header.tsx" path="E:/1 ДИСК E/JavaScript/Stage-react/task-1/React-rsschool/vite-project/src/components/heder/decoration-header.tsx">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="0" type="stmt"/>
+      </file>
+      <file name="header.tsx" path="E:/1 ДИСК E/JavaScript/Stage-react/task-1/React-rsschool/vite-project/src/components/heder/header.tsx">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="8" count="0" type="stmt"/>
+      </file>
+      <file name="navigation-header.tsx" path="E:/1 ДИСК E/JavaScript/Stage-react/task-1/React-rsschool/vite-project/src/components/heder/navigation-header.tsx">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="8" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.search-form">
+      <metrics statements="9" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="6" coveredmethods="0"/>
+      <file name="search-form.tsx" path="E:/1 ДИСК E/JavaScript/Stage-react/task-1/React-rsschool/vite-project/src/components/search-form/search-form.tsx">
+        <metrics statements="9" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="6" coveredmethods="0"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="43" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.data">
+      <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="cards-info.ts" path="E:/1 ДИСК E/JavaScript/Stage-react/task-1/React-rsschool/vite-project/src/data/cards-info.ts">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="20" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.pages.404-page">
+      <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="404-page.tsx" path="E:/1 ДИСК E/JavaScript/Stage-react/task-1/React-rsschool/vite-project/src/pages/404-page/404-page.tsx">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="9" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.pages.about-page">
+      <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="about-page.tsx" path="E:/1 ДИСК E/JavaScript/Stage-react/task-1/React-rsschool/vite-project/src/pages/about-page/about-page.tsx">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="8" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.pages.main-page">
+      <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+      <file name="main-page.tsx" path="E:/1 ДИСК E/JavaScript/Stage-react/task-1/React-rsschool/vite-project/src/pages/main-page/main-page.tsx">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.utils.const">
+      <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="const.ts" path="E:/1 ДИСК E/JavaScript/Stage-react/task-1/React-rsschool/vite-project/src/utils/const/const.ts">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+      </file>
+    </package>
   </project>
 </coverage>
