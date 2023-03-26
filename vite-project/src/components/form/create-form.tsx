@@ -1,36 +1,15 @@
 import VisitorCard from '../../components/visitor-card/visitor-card';
 import React from 'react';
 import './create-form.scss';
+import { MyState } from '../../utils/types/types';
 
-
-type CardInfo = {
-  name: string | undefined
-  date: string | undefined
-  status: string | undefined
-  public: boolean | undefined
-  gender: string | undefined
-  file: string | undefined
-  id: number
-}
-
-interface MyState {
-  arrCards: CardInfo[]
-  currentStatus: string | undefined
-  currentGender: string | undefined
-  currentPublic: boolean |undefined
-  currentImg: File | undefined
-  id: number
-}
-
-
-export default class CreateForm extends React.Component<{}, MyState> {
+export default class CreateForm extends React.Component<string, MyState> {
   textInput: React.RefObject<HTMLInputElement>;
   dateInput: React.RefObject<HTMLInputElement>;
   fileInput: React.RefObject<HTMLInputElement>;
 
   constructor(props: string) {
-
-    super(props)
+    super(props);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleChangeStatus = this.handleChangeStatus.bind(this);
     this.handleChangeRadio = this.handleChangeRadio.bind(this);
@@ -45,46 +24,50 @@ export default class CreateForm extends React.Component<{}, MyState> {
       currentGender: 'male',
       currentPublic: false,
       currentImg: undefined,
-      id: 0
-    }
+      id: 0,
+    };
   }
-
 
   handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    if (!this.checkValidation()) { return }
-    let path: string
-    if(this.fileInput.current?.files) {
-      const fileImg = this.fileInput.current?.files[0]
-      path= window.URL.createObjectURL(fileImg)
+    if (!this.checkValidation()) {
+      return;
     }
-    this.setState(state => {
-      const random = Math.random()
-      const arrCards = [...state.arrCards, {
-        name: this.textInput.current?.value,
-        date: this.dateInput.current?.value,
-        status: this.state.currentStatus,
-        public: this.state.currentPublic,
-        gender: this.state.currentGender,
-        file: path,
-        id: random
-      }];
+    let path: string;
+    if (this.fileInput.current?.files) {
+      const fileImg = this.fileInput.current?.files[0];
+      path = window.URL.createObjectURL(fileImg);
+    }
+    this.setState((state) => {
+      const random = Math.random();
+      const arrCards = [
+        ...state.arrCards,
+        {
+          name: this.textInput.current?.value,
+          date: this.dateInput.current?.value,
+          status: this.state.currentStatus,
+          public: this.state.currentPublic,
+          gender: this.state.currentGender,
+          file: path,
+          id: random,
+        },
+      ];
       return {
         arrCards,
-      }
+      };
     });
   }
 
   handleChangeStatus(event: React.ChangeEvent<HTMLSelectElement>) {
-    this.setState({currentStatus: event.target.value});
+    this.setState({ currentStatus: event.target.value });
   }
 
   handleChangeRadio(event: React.ChangeEvent<HTMLInputElement>) {
-    this.setState({currentGender: event.target.value});
+    this.setState({ currentGender: event.target.value });
   }
 
   handleChangeCheck() {
-    this.setState({currentPublic: !this.state.currentPublic});
+    this.setState({ currentPublic: !this.state.currentPublic });
   }
 
   checkValidation() {
@@ -93,26 +76,26 @@ export default class CreateForm extends React.Component<{}, MyState> {
     let isImg = false;
 
     const name = this.textInput.current?.value.trim();
-    if ( name && name[0] === name.toUpperCase()[0] ) {
-      isName = true
+    if (name && name[0] === name.toUpperCase()[0]) {
+      isName = true;
     } else {
       alert('Name must start with a capital letter');
     }
 
-    const date = this.dateInput.current?.value
-    if ( date && date?.length > 0 ) {
-      isDate = true
+    const date = this.dateInput.current?.value;
+    if (date && date?.length > 0) {
+      isDate = true;
     } else {
-      alert('Enter a date')
+      alert('Enter a date');
     }
 
     if (this.fileInput.current?.files && this.fileInput.current?.files[0]) {
-      isImg = true
-     } else {
-       alert('Add picture')
-     }
+      isImg = true;
+    } else {
+      alert('Add picture');
+    }
 
-    return isDate && isName && isImg ? true : false
+    return isDate && isName && isImg ? true : false;
   }
 
   render() {
@@ -122,7 +105,11 @@ export default class CreateForm extends React.Component<{}, MyState> {
           <h1 className="h1-form">Create visitor card</h1>
           <label className="label-form">
             Name:
-            <input type="text" className="input-name" name="name"autoComplete="off"
+            <input
+              type="text"
+              className="input-name"
+              name="name"
+              autoComplete="off"
               ref={this.textInput}
             />
           </label>
@@ -132,7 +119,11 @@ export default class CreateForm extends React.Component<{}, MyState> {
           </label>
           <label className="label-form">
             Status
-            <select className="input-select" value={this.state.currentStatus} onChange={this.handleChangeStatus}>
+            <select
+              className="input-select"
+              value={this.state.currentStatus}
+              onChange={this.handleChangeStatus}
+            >
               <option value="administrator">administrator</option>
               <option value="authorized-person">authorized person</option>
               <option value="guest-with-invitation">guest with invitation</option>
@@ -141,25 +132,43 @@ export default class CreateForm extends React.Component<{}, MyState> {
           </label>
           <label className="label-check">
             For public view
-            <input name="public" className="input-check" type="checkbox" onChange={this.handleChangeCheck}/>
+            <input
+              name="public"
+              className="input-check"
+              type="checkbox"
+              onChange={this.handleChangeCheck}
+            />
           </label>
           <div className="radio-block">
             <label className="label-radio">
-              <input type="radio" value="male" checked name="gender" onChange={this.handleChangeRadio} /> male
+              <input
+                type="radio"
+                value="male"
+                checked
+                name="gender"
+                onChange={this.handleChangeRadio}
+              />{' '}
+              male
             </label>
             <label className="label-radio">
-              <input type="radio" value="female" name="gender" onChange={this.handleChangeRadio} /> female
+              <input type="radio" value="female" name="gender" onChange={this.handleChangeRadio} />{' '}
+              female
             </label>
           </div>
           <label className="label-form">
-            <input type="file" className="input-file" accept=".png,.jpg,.webp" ref={this.fileInput} />
+            <input
+              type="file"
+              className="input-file"
+              accept=".png,.jpg,.webp"
+              ref={this.fileInput}
+            />
           </label>
           <button type="submit" className="btn-create">
             Create
           </button>
         </form>
         <div className="visitors-cards-block">
-          {this.state.arrCards.map(card => {
+          {this.state.arrCards.map((card) => {
             return (
               <VisitorCard
                 key={card.id}
@@ -170,7 +179,7 @@ export default class CreateForm extends React.Component<{}, MyState> {
                 public={card.public ? 'for public view' : ''}
                 picture={card.file}
               />
-            )
+            );
           })}
         </div>
       </div>

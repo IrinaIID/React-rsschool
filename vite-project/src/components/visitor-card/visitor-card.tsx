@@ -1,17 +1,9 @@
 import React from 'react';
-import './visitor-card.scss'
+import { PropsVisitorCard } from '../../utils/types/types';
+import './visitor-card.scss';
 
-interface Props {
-  name: string | undefined
-  date: string | undefined
-  status: string | undefined
-  gender: string | undefined
-  public: string | undefined
-  picture: string | undefined
-}
-
-export default class VisitorCard extends React.Component<Props> {
-  constructor(props: Props) {
+export default class VisitorCard extends React.Component<PropsVisitorCard> {
+  constructor(props: PropsVisitorCard) {
     super(props);
   }
 
