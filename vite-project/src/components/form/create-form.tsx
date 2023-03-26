@@ -3,7 +3,7 @@ import React from 'react';
 import './create-form.scss';
 import { MyState } from '../../utils/types/types';
 
-export default class CreateForm extends React.Component<string, MyState> {
+export default class CreateForm extends React.Component<{}, MyState> {
   textInput: React.RefObject<HTMLInputElement>;
   dateInput: React.RefObject<HTMLInputElement>;
   fileInput: React.RefObject<HTMLInputElement>;

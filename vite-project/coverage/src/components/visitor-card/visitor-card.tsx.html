@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for src/components/card/card.tsx</title>
+    <title>Code coverage report for src/components/visitor-card/visitor-card.tsx</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../../prettify.css" />
     <link rel="stylesheet" href="../../../base.css" />
@@ -19,13 +19,13 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../../index.html">All files</a> / <a href="index.html">src/components/card</a> card.tsx</h1>
+        <h1><a href="../../../index.html">All files</a> / <a href="index.html">src/components/visitor-card</a> visitor-card.tsx</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>3/3</span>
+                <span class='fraction'>0/2</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>2/2</span>
+                <span class='fraction'>0/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>3/3</span>
+                <span class='fraction'>0/2</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line high'></div>
+    <div class='status-line low'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -91,31 +91,19 @@
 <a name='L26'></a><a href='#L26'>26</a>
 <a name='L27'></a><a href='#L27'>27</a>
 <a name='L28'></a><a href='#L28'>28</a>
-<a name='L29'></a><a href='#L29'>29</a>
-<a name='L30'></a><a href='#L30'>30</a>
-<a name='L31'></a><a href='#L31'>31</a>
-<a name='L32'></a><a href='#L32'>32</a>
-<a name='L33'></a><a href='#L33'>33</a>
-<a name='L34'></a><a href='#L34'>34</a>
-<a name='L35'></a><a href='#L35'>35</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L29'></a><a href='#L29'>29</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -132,34 +120,28 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react';
-import './card.scss';
+import { PropsVisitorCard } from '../../utils/types/types';
+import './visitor-card.scss';
 &nbsp;
-interface DefaultProps {
-  picture: string;
-  name: string;
-  year: string;
-}
-type Props = DefaultProps;
-&nbsp;
-export default class Card extends React.Component&lt;Props&gt; {
-  constructor(props: Props) {
-    super(props);
-&nbsp;
-    props.picture;
+export default class VisitorCard extends React.Component&lt;PropsVisitorCard&gt; {
+<span class="fstat-no" title="function not covered" >  constructor(p</span>rops: PropsVisitorCard) {
+<span class="cstat-no" title="statement not covered" >    super(props);</span>
   }
 &nbsp;
-  render() {
-    return (
-      &lt;div className="card-all"&gt;
+<span class="fstat-no" title="function not covered" >  render() {</span>
+<span class="cstat-no" title="statement not covered" >    return (</span>
+      &lt;div className="visitor-card-all"&gt;
         &lt;div className="img-card-block"&gt;
-          &lt;img src={this.props.picture} alt="card" /&gt;
+          &lt;img src={this.props.picture} alt="card" className="img-visitor-card" /&gt;
         &lt;/div&gt;
         &lt;div className="description-card-block"&gt;
           &lt;div className="description-info"&gt;
-            &lt;p className="p-info"&gt;{`name: ${this.props.name}`}&lt;/p&gt;
-            &lt;p className="p-info"&gt;{`year: ${this.props.year}`}&lt;/p&gt;
+            &lt;p className="p-info"&gt;name: {this.props.name}&lt;/p&gt;
+            &lt;p className="p-info"&gt;gender: {this.props.gender}&lt;/p&gt;
+            &lt;p className="p-info"&gt;status: {this.props.status}&lt;/p&gt;
+            &lt;p className="p-info"&gt;date: {this.props.date}&lt;/p&gt;
+            &lt;p className="p-info p-info-public"&gt;{this.props.public}&lt;/p&gt;
           &lt;/div&gt;
-          &lt;button className="btn-card"&gt;choose&lt;/button&gt;
         &lt;/div&gt;
       &lt;/div&gt;
     );
