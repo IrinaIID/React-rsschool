@@ -7,7 +7,7 @@ describe('Header test', () => {
   test('should show name of links', () => {
     render(
       <BrowserRouter>
-          <Header />
+        <Header />
       </BrowserRouter>
     );
     expect(screen.getByText(/main/i)).toBeDefined();

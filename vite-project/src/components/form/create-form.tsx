@@ -3,12 +3,12 @@ import React from 'react';
 import './create-form.scss';
 import { MyState } from '../../utils/types/types';
 
-export default class CreateForm extends React.Component<{}, MyState> {
+export default class CreateForm extends React.Component<object, MyState> {
   textInput: React.RefObject<HTMLInputElement>;
   dateInput: React.RefObject<HTMLInputElement>;
   fileInput: React.RefObject<HTMLInputElement>;
 
-  constructor(props: string) {
+  constructor(props: object) {
     super(props);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleChangeStatus = this.handleChangeStatus.bind(this);

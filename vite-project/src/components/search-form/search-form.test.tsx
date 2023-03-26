@@ -7,7 +7,7 @@ describe('Search-form test', () => {
   test('should contain button', () => {
     render(
       <BrowserRouter>
-          <SearchForm text=""/>
+        <SearchForm text="" />
       </BrowserRouter>
     );
     expect(screen.getByRole('button')).toBeDefined();
