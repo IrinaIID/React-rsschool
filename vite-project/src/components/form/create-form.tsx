@@ -52,6 +52,7 @@ export default class CreateForm extends React.Component<{}, MyState> {
 
   handleSubmit(e: React.FormEvent) {
     e.preventDefault();
+    if (!this.checkValidation()) { return }
     let path: string
     if(this.fileInput.current?.files) {
       const fileImg = this.fileInput.current?.files[0]
@@ -84,6 +85,34 @@ export default class CreateForm extends React.Component<{}, MyState> {
 
   handleChangeCheck() {
     this.setState({currentPublic: !this.state.currentPublic});
+  }
+
+  checkValidation() {
+    let isName = false;
+    let isDate = false;
+    let isImg = false;
+
+    const name = this.textInput.current?.value.trim();
+    if ( name && name[0] === name.toUpperCase()[0] ) {
+      isName = true
+    } else {
+      alert('Name must start with a capital letter');
+    }
+
+    const date = this.dateInput.current?.value
+    if ( date && date?.length > 0 ) {
+      isDate = true
+    } else {
+      alert('Enter a date')
+    }
+
+    if (this.fileInput.current?.files && this.fileInput.current?.files[0]) {
+      isImg = true
+     } else {
+       alert('Add picture')
+     }
+
+    return isDate && isName && isImg ? true : false
   }
 
   render() {
