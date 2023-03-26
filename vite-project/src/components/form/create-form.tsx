@@ -1,48 +1,149 @@
+import VisitorCard from '../../components/visitor-card/visitor-card';
 import React from 'react';
 import './create-form.scss';
 
 
-export default class CreateForm extends React.Component {
+type CardInfo = {
+  name: string | undefined
+  date: string | undefined
+  status: string | undefined
+  public: boolean | undefined
+  gender: string | undefined
+  file: string | undefined
+  id: number
+}
+
+interface MyState {
+  arrCards: CardInfo[]
+  currentStatus: string | undefined
+  currentGender: string | undefined
+  currentPublic: boolean |undefined
+  currentImg: File | undefined
+  id: number
+}
+
+
+export default class CreateForm extends React.Component<{}, MyState> {
+  textInput: React.RefObject<HTMLInputElement>;
+  dateInput: React.RefObject<HTMLInputElement>;
+  fileInput: React.RefObject<HTMLInputElement>;
+
+  constructor(props: string) {
+
+    super(props)
+    this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleChangeStatus = this.handleChangeStatus.bind(this);
+    this.handleChangeRadio = this.handleChangeRadio.bind(this);
+    this.handleChangeCheck = this.handleChangeCheck.bind(this);
+
+    this.textInput = React.createRef();
+    this.dateInput = React.createRef();
+    this.fileInput = React.createRef();
+    this.state = {
+      arrCards: [],
+      currentStatus: 'administrator',
+      currentGender: 'male',
+      currentPublic: false,
+      currentImg: undefined,
+      id: 0
+    }
+  }
+
+
+  handleSubmit(e: React.FormEvent) {
+    e.preventDefault();
+    let path: string
+    if(this.fileInput.current?.files) {
+      const fileImg = this.fileInput.current?.files[0]
+      path= window.URL.createObjectURL(fileImg)
+    }
+    this.setState(state => {
+      const random = Math.random()
+      const arrCards = [...state.arrCards, {
+        name: this.textInput.current?.value,
+        date: this.dateInput.current?.value,
+        status: this.state.currentStatus,
+        public: this.state.currentPublic,
+        gender: this.state.currentGender,
+        file: path,
+        id: random
+      }];
+      return {
+        arrCards,
+      }
+    });
+  }
+
+  handleChangeStatus(event: React.ChangeEvent<HTMLSelectElement>) {
+    this.setState({currentStatus: event.target.value});
+  }
+
+  handleChangeRadio(event: React.ChangeEvent<HTMLInputElement>) {
+    this.setState({currentGender: event.target.value});
+  }
+
+  handleChangeCheck() {
+    this.setState({currentPublic: !this.state.currentPublic});
+  }
+
   render() {
     return (
-      <div className="form-all">
-        <form className="all-form">
+      <div className="form-page-all">
+        <form onSubmit={this.handleSubmit} className="all-form">
           <h1 className="h1-form">Create visitor card</h1>
           <label className="label-form">
             Name:
-            <input type="text" className="input-name" name="name" />
+            <input type="text" className="input-name" name="name"autoComplete="off"
+              ref={this.textInput}
+            />
           </label>
           <label className="label-form">
             Date of card creation:
-            <input type="date" className="input-date" name="date" />
+            <input type="date" className="input-date" name="date" ref={this.dateInput} />
           </label>
           <label className="label-form">
             Status
-            <select className="input-select">
-              <option value="admin">administrator</option>
-              <option value="authorized">authorized person</option>
-              <option value="gurst-invite">guest with invitation</option>
-              <option value="guest-no-invite">guest without invitation</option>
+            <select className="input-select" value={this.state.currentStatus} onChange={this.handleChangeStatus}>
+              <option value="administrator">administrator</option>
+              <option value="authorized-person">authorized person</option>
+              <option value="guest-with-invitation">guest with invitation</option>
+              <option value="guest-without-invitation">guest without invitation</option>
             </select>
           </label>
           <label className="label-check">
             For public view
-            <input name="public" className="input-check"
-            type="checkbox" />
+            <input name="public" className="input-check" type="checkbox" onChange={this.handleChangeCheck}/>
           </label>
           <div className="radio-block">
             <label className="label-radio">
-              <input type="radio" value="male" name="gender"/> male
+              <input type="radio" value="male" checked name="gender" onChange={this.handleChangeRadio} /> male
             </label>
             <label className="label-radio">
-              <input type="radio" value="female" name="gender"/> female
+              <input type="radio" value="female" name="gender" onChange={this.handleChangeRadio} /> female
             </label>
           </div>
           <label className="label-form">
-            <input type="file" className="input-file" />
+            <input type="file" className="input-file" accept=".png,.jpg,.webp" ref={this.fileInput} />
           </label>
-          <input type="submit" className="btn-create" value="Create" />
+          <button type="submit" className="btn-create">
+            Create
+          </button>
         </form>
+        <div className="visitors-cards-block">
+          {this.state.arrCards.map(card => {
+            return (
+              <VisitorCard
+                key={card.id}
+                name={card.name}
+                date={card.date}
+                status={card.status}
+                gender={card.gender}
+                public={card.public ? 'for public view' : ''}
+                picture={card.file}
+              />
+            )
+          })}
+        </div>
       </div>
     );
   }

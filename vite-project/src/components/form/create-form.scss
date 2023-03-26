@@ -1,3 +1,9 @@
+.form-page-all {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .all-form {
   max-width: 600px;
   display: flex;
@@ -14,6 +20,7 @@
 .h1-form {
   margin: 0 0 10px;
   font-size: 20px;
+  font-family: Italiana, Helvetica, sans-serif;
 }
 
 .label-form {
@@ -60,4 +67,12 @@
     cursor: pointer;
     background-color: #1e83872c;
   }
+}
+
+.visitors-cards-block {
+  margin: 60px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
 }
