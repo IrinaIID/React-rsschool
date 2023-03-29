@@ -38,26 +38,30 @@ export default class CreateForm extends React.Component<object, MyState> {
       const fileImg = this.fileInput.current?.files[0];
       path = window.URL.createObjectURL(fileImg);
     }
-    this.setState((state) => {
-      const random = Math.random();
-      const arrCards = [
-        ...state.arrCards,
-        {
-          name: this.textInput.current?.value,
-          date: this.dateInput.current?.value,
-          status: this.state.currentStatus,
-          public: this.state.currentPublic,
-          gender: this.state.currentGender,
-          file: path,
-          id: random,
-        },
-      ];
-      return {
-        arrCards,
-      };
-    }, () => {
-      (e.target as HTMLFormElement).reset();
-    });
+    this.setState(
+      (state) => {
+        const random = Math.random();
+        const arrCards = [
+          ...state.arrCards,
+          {
+            name: this.textInput.current?.value,
+            date: this.dateInput.current?.value,
+            status: this.state.currentStatus,
+            public: this.state.currentPublic,
+            gender: this.state.currentGender,
+            file: path,
+            id: random,
+          },
+        ];
+        return {
+          arrCards,
+        };
+      },
+      () => {
+        (e.target as HTMLFormElement).reset();
+        alert('Card created successfully');
+      }
+    );
   }
 
   handleChangeStatus(event: React.ChangeEvent<HTMLSelectElement>) {
