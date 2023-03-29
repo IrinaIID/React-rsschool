@@ -4,7 +4,7 @@ import App from './App';
 
 describe('App test', () => {
   test('App render test', () => {
-    render( <App /> );
+    render(<App />);
     expect(screen.getByText(/main/i)).toBeDefined();
     expect(screen.getByText(/forms/i)).toBeDefined();
   });
