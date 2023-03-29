@@ -33,6 +33,7 @@ export default class CreateForm extends React.Component<object, MyState> {
     if (!this.checkValidation()) {
       return;
     }
+    (e.target as HTMLFormElement).reset();
     let path: string;
     if (this.fileInput.current?.files) {
       const fileImg = this.fileInput.current?.files[0];
