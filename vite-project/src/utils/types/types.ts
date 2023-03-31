@@ -25,3 +25,9 @@ export interface MyState {
   currentImg: File | undefined;
   id: number;
 }
+
+export interface CardProps {
+  picture: string;
+  name: string;
+  year: string;
+}
