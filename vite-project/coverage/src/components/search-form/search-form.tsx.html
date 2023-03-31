@@ -37,9 +37,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">16.66% </span>
+                <span class="strong">20% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/6</span>
+                <span class='fraction'>1/5</span>
             </div>
         
             
@@ -105,22 +105,7 @@
 <a name='L40'></a><a href='#L40'>40</a>
 <a name='L41'></a><a href='#L41'>41</a>
 <a name='L42'></a><a href='#L42'>42</a>
-<a name='L43'></a><a href='#L43'>43</a>
-<a name='L44'></a><a href='#L44'>44</a>
-<a name='L45'></a><a href='#L45'>45</a>
-<a name='L46'></a><a href='#L46'>46</a>
-<a name='L47'></a><a href='#L47'>47</a>
-<a name='L48'></a><a href='#L48'>48</a>
-<a name='L49'></a><a href='#L49'>49</a>
-<a name='L50'></a><a href='#L50'>50</a>
-<a name='L51'></a><a href='#L51'>51</a>
-<a name='L52'></a><a href='#L52'>52</a>
-<a name='L53'></a><a href='#L53'>53</a>
-<a name='L54'></a><a href='#L54'>54</a>
-<a name='L55'></a><a href='#L55'>55</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L43'></a><a href='#L43'>43</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -130,16 +115,14 @@
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
@@ -149,6 +132,10 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -157,73 +144,50 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react';
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React, { useState } from 'react';
 import './search-form.scss';
 import Search from '../../assets/img/search.png';
-import { URL_TO_SSEND } from '../../utils/const/const';
 &nbsp;
-type State = {
-  text: string;
-};
 &nbsp;
-export default class SearchForm extends React.Component&lt;State&gt; {
-  state = {
-    text: localStorage.getItem('searchInput') || '',
-  };
+export default function SearchForm() {
 &nbsp;
-<span class="fstat-no" title="function not covered" >  handleOnChange(e</span>: React.FormEvent&lt;HTMLInputElement&gt;) {
-<span class="cstat-no" title="statement not covered" >    this.setState({ text: e.currentTarget.value }, <span class="fstat-no" title="function not covered" >() =&gt; {</span></span>
-<span class="cstat-no" title="statement not covered" >      localStorage.setItem('searchInput', this.state.text);</span>
-    });
+  const [text, setText] = useState(localStorage.getItem('inputText') || '');
+&nbsp;
+  function <span class="fstat-no" title="function not covered" >handleChangeInput(e</span>: React.FormEvent&lt;HTMLInputElement&gt;) {
+<span class="cstat-no" title="statement not covered" >    setText(e.currentTarget.value);</span>
+<span class="cstat-no" title="statement not covered" >    localStorage.setItem('inputText', e.currentTarget.value);</span>
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  handelClearInput() {</span>
-<span class="cstat-no" title="statement not covered" >    this.setState({ text: '' });</span>
+  function <span class="fstat-no" title="function not covered" >handleClickBtn(e</span>: React.SyntheticEvent) {
+<span class="cstat-no" title="statement not covered" >    e.preventDefault();</span>
+<span class="cstat-no" title="statement not covered" >    localStorage.clear();</span>
+<span class="cstat-no" title="statement not covered" >    setText('')</span>
   }
 &nbsp;
-  render() {
-    return (
-      &lt;form className="search-form-all" ref={URL_TO_SSEND}&gt;
-        &lt;div&gt;
-          &lt;input
-            type="text"
-            className="input-search"
-            value={this.state.text}
-            onInput={<span class="fstat-no" title="function not covered" >(e</span>) =&gt; {
-<span class="cstat-no" title="statement not covered" >              this.handleOnChange(e);</span>
-            }}
-          /&gt;
-        &lt;/div&gt;
-        &lt;div&gt;
-          &lt;button
-            onClick={<span class="fstat-no" title="function not covered" >(e</span>: React.SyntheticEvent) =&gt; {
-<span class="cstat-no" title="statement not covered" >              e.preventDefault();</span>
-<span class="cstat-no" title="statement not covered" >              localStorage.clear();</span>
-<span class="cstat-no" title="statement not covered" >              this.handelClearInput();</span>
-            }}
-            type="submit"
-            className="search-btn"
-          &gt;
-            &lt;img src={Search} alt="search" /&gt;
-          &lt;/button&gt;
-        &lt;/div&gt;
-      &lt;/form&gt;
-    );
-  }
+  return (
+    &lt;form className="search-form-all"&gt;
+      &lt;div&gt;
+        &lt;input
+          type="text"
+          className="input-search"
+          value={text}
+          onChange={<span class="fstat-no" title="function not covered" >e =&gt; <span class="cstat-no" title="statement not covered" >h</span>andleChangeInput(e)}</span>
+        /&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        &lt;button
+          onClick={<span class="fstat-no" title="function not covered" >e =&gt; <span class="cstat-no" title="statement not covered" >h</span>andleClickBtn(e)}</span>
+          type="submit"
+          className="search-btn"
+        &gt;
+          &lt;img src={Search} alt="search" /&gt;
+        &lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/form&gt;
+  );
 }
 &nbsp;</pre></td></tr></table></pre>
 
@@ -232,7 +196,7 @@ export default class SearchForm extends React.Component&lt;State&gt; {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-03-29T16:03:33.838Z
+                at 2023-03-31T20:00:46.488Z
             </div>
         <script src="../../../prettify.js"></script>
         <script>

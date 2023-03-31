@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">25% </span>
+                <span class="strong">24.39% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>10/40</span>
+                <span class='fraction'>10/41</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">25% </span>
+                <span class="strong">24.39% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>10/40</span>
+                <span class='fraction'>10/41</span>
             </div>
         
             
@@ -253,7 +253,11 @@
 <a name='L188'></a><a href='#L188'>188</a>
 <a name='L189'></a><a href='#L189'>189</a>
 <a name='L190'></a><a href='#L190'>190</a>
-<a name='L191'></a><a href='#L191'>191</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L191'></a><a href='#L191'>191</a>
+<a name='L192'></a><a href='#L192'>192</a>
+<a name='L193'></a><a href='#L193'>193</a>
+<a name='L194'></a><a href='#L194'>194</a>
+<a name='L195'></a><a href='#L195'>195</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -294,24 +298,28 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -483,26 +491,30 @@ export default class CreateForm extends React.Component&lt;object, MyState&gt; {
       const fileImg = <span class="cstat-no" title="statement not covered" >this.fileInput.current?.files[0];</span>
 <span class="cstat-no" title="statement not covered" >      path = window.URL.createObjectURL(fileImg);</span>
     }
-<span class="cstat-no" title="statement not covered" >    this.setState(<span class="fstat-no" title="function not covered" >(s</span>tate) =&gt; {</span>
-      const random = <span class="cstat-no" title="statement not covered" >Math.random();</span>
-      const arrCards = <span class="cstat-no" title="statement not covered" >[</span>
-        ...state.arrCards,
-        {
-          name: this.textInput.current?.value,
-          date: this.dateInput.current?.value,
-          status: this.state.currentStatus,
-          public: this.state.currentPublic,
-          gender: this.state.currentGender,
-          file: path,
-          id: random,
-        },
-      ];
-<span class="cstat-no" title="statement not covered" >      return {</span>
-        arrCards,
-      };
-    }, <span class="fstat-no" title="function not covered" >() =&gt; {</span>
-      (<span class="cstat-no" title="statement not covered" >e.target as HTMLFormElement).reset();</span>
-    });
+<span class="cstat-no" title="statement not covered" >    this.setState(</span>
+<span class="fstat-no" title="function not covered" >      (s</span>tate) =&gt; {
+        const random = <span class="cstat-no" title="statement not covered" >Math.random();</span>
+        const arrCards = <span class="cstat-no" title="statement not covered" >[</span>
+          ...state.arrCards,
+          {
+            name: this.textInput.current?.value,
+            date: this.dateInput.current?.value,
+            status: this.state.currentStatus,
+            public: this.state.currentPublic,
+            gender: this.state.currentGender,
+            file: path,
+            id: random,
+          },
+        ];
+<span class="cstat-no" title="statement not covered" >        return {</span>
+          arrCards,
+        };
+      },
+<span class="fstat-no" title="function not covered" >      () =&gt; {</span>
+        (<span class="cstat-no" title="statement not covered" >e.target as HTMLFormElement).reset();</span>
+<span class="cstat-no" title="statement not covered" >        alert('Card created successfully');</span>
+      }
+    );
   }
 &nbsp;
 <span class="fstat-no" title="function not covered" >  handleChangeStatus(e</span>vent: React.ChangeEvent&lt;HTMLSelectElement&gt;) {
@@ -640,7 +652,7 @@ export default class CreateForm extends React.Component&lt;object, MyState&gt; {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-03-29T16:03:33.838Z
+                at 2023-03-31T20:00:46.488Z
             </div>
         <script src="../../../prettify.js"></script>
         <script>

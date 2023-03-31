@@ -4,6 +4,6 @@ const ROUTES = {
   forms: '/forms',
 };
 
-const URL_TO_SSEND = '3';
+const URL_TO_SSEND = '';
 
 export { ROUTES, URL_TO_SSEND };
