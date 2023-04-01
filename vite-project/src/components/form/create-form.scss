@@ -33,11 +33,18 @@
 .input-name,
 .input-date,
 .input-select,
-.input-file {
+.input-file,
+.input-name-error,
+.input-date-error {
   border-radius: 10px;
   border: 1px solid #1E8487;
   width: 100%;
   outline: none;
+}
+
+.input-name-error,
+.input-date-error {
+  border-color: #ca4848;
 }
 
 .input-check {
@@ -75,4 +82,10 @@
   display: flex;
   justify-content: center;
   flex-flow: wrap;
+}
+
+.p-input-error {
+  margin: 0;
+  font-size: 12px;
+  color: #ca4848;
 }
