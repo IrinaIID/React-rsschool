@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">35.71% </span>
+                <span class="strong">41.66% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>5/14</span>
+                <span class='fraction'>5/12</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">35.71% </span>
+                <span class="strong">41.66% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>5/14</span>
+                <span class='fraction'>5/12</span>
             </div>
         
             
@@ -192,23 +192,7 @@
 <a name='L127'></a><a href='#L127'>127</a>
 <a name='L128'></a><a href='#L128'>128</a>
 <a name='L129'></a><a href='#L129'>129</a>
-<a name='L130'></a><a href='#L130'>130</a>
-<a name='L131'></a><a href='#L131'>131</a>
-<a name='L132'></a><a href='#L132'>132</a>
-<a name='L133'></a><a href='#L133'>133</a>
-<a name='L134'></a><a href='#L134'>134</a>
-<a name='L135'></a><a href='#L135'>135</a>
-<a name='L136'></a><a href='#L136'>136</a>
-<a name='L137'></a><a href='#L137'>137</a>
-<a name='L138'></a><a href='#L138'>138</a>
-<a name='L139'></a><a href='#L139'>139</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L130'></a><a href='#L130'>130</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -236,9 +220,6 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
@@ -339,26 +320,20 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { useForm } from "react-hook-form";
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { useForm } from 'react-hook-form';
 import VisitorCard from '../visitor-card/visitor-card';
 import './create-form.scss';
-import { CardInfo } from '../../utils/types/types';
-import { useState } from "react";
-&nbsp;
-type FormData = {
-  name: string;
-  date: string
-  status: string
-  public: boolean
-  gender: string
-  picture: string
-};
-&nbsp;
+import { CardInfo, FormData } from '../../utils/types/types';
+import { useState } from 'react';
 &nbsp;
 export default function CreateForm() {
-&nbsp;
-  let arr: CardInfo[];
-  const { register, handleSubmit, reset, watch, formState: { errors } } = useForm&lt;FormData&gt;();
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm&lt;FormData&gt;();
   const [picture, setPicture] = useState('');
   const [arrCards, setArrCards] = useState&lt;CardInfo[]&gt;([]);
 &nbsp;
@@ -370,13 +345,10 @@ export default function CreateForm() {
       public: data.status,
       gender: data.gender,
       file: picture,
-      id: Math.random()
-    }
-<span class="cstat-no" title="statement not covered" >    console.log(picture)</span>
-<span class="cstat-no" title="statement not covered" >    console.log(data)</span>
+      id: Math.random(),
+    };
 <span class="cstat-no" title="statement not covered" >    setArrCards([...arrCards, card]);</span>
 <span class="cstat-no" title="statement not covered" >    reset();</span>
-&nbsp;
   });
 &nbsp;
   return (
@@ -388,7 +360,10 @@ export default function CreateForm() {
           &lt;input
             type="text"
             className={errors.name ? <span class="branch-0 cbranch-no" title="branch not covered" >'input-name-error' : '</span>input-name'}
-            {...register("name", { required: 'This is required', minLength: {value: 4, message: 'Min length is 4'} })}
+            {...register('name', {
+              required: 'This is required',
+              minLength: { value: 4, message: 'Min length is 4' },
+            })}
             autoComplete="off"
           /&gt;
           &lt;p className="p-input-error"&gt;{errors.name?.message}&lt;/p&gt;
@@ -396,8 +371,9 @@ export default function CreateForm() {
         &lt;label className="label-form"&gt;
           Date of card creation:
           &lt;input
-            type="date" className={errors.date ? <span class="branch-0 cbranch-no" title="branch not covered" >'input-date-error' : '</span>input-date'}
-            {...register("date", { required: 'This is required'})}
+            type="date"
+            className={errors.date ? <span class="branch-0 cbranch-no" title="branch not covered" >'input-date-error' : '</span>input-date'}
+            {...register('date', { required: 'This is required' })}
           /&gt;
           &lt;p className="p-input-error"&gt;{errors.date?.message}&lt;/p&gt;
         &lt;/label&gt;
@@ -405,7 +381,7 @@ export default function CreateForm() {
           Status
           &lt;select
             className="input-select"
-            {...register("status", { required: 'This is required'})}
+            {...register('status', { required: 'This is required' })}
           &gt;
             &lt;option value="administrator"&gt;administrator&lt;/option&gt;
             &lt;option value="authorized-person"&gt;authorized person&lt;/option&gt;
@@ -415,26 +391,22 @@ export default function CreateForm() {
         &lt;/label&gt;
         &lt;label className="label-check"&gt;
           For public view
-          &lt;input
-            className="input-check"
-            type="checkbox"
-            {...register("public")}
-          /&gt;
+          &lt;input className="input-check" type="checkbox" {...register('public')} /&gt;
         &lt;/label&gt;
         &lt;div className="radio-block"&gt;
           &lt;label className="label-radio"&gt;
             &lt;input
               type="radio"
               value="male"
-              {...register("gender", { required: 'This is required'})}
-              /&gt;
+              {...register('gender', { required: 'This is required' })}
+            /&gt;
             male
           &lt;/label&gt;
           &lt;label className="label-radio"&gt;
             &lt;input
               type="radio"
               value="female"
-              {...register("gender", { required: 'This is required'})}
+              {...register('gender', { required: 'This is required' })}
             /&gt;
             female
           &lt;/label&gt;
@@ -445,11 +417,11 @@ export default function CreateForm() {
             type="file"
             className="input-file"
             accept=".png,.jpg,.webp"
-            value={ undefined }
-            {...register("picture", { required: 'This is required' })}
+            value={undefined}
+            {...register('picture', { required: 'This is required' })}
             onChange={<span class="fstat-no" title="function not covered" >(e</span>) =&gt; {
 <span class="cstat-no" title="statement not covered" >              if (e.target.files &amp;&amp; e.target.files[0]) {</span>
-                const path = <span class="cstat-no" title="statement not covered" >window.URL.createObjectURL(e.target.files[0])</span>
+                const path = <span class="cstat-no" title="statement not covered" >window.URL.createObjectURL(e.target.files[0]);</span>
 <span class="cstat-no" title="statement not covered" >                setPicture(path);</span>
               }
             }}
@@ -477,14 +449,15 @@ export default function CreateForm() {
       &lt;/div&gt;
     &lt;/div&gt;
   );
-}</pre></td></tr></table></pre>
+}
+&nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-04-02T09:30:41.524Z
+                at 2023-04-02T16:39:05.564Z
             </div>
         <script src="../../../prettify.js"></script>
         <script>

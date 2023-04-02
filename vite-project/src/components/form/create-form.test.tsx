@@ -8,5 +8,6 @@ describe('CreateForm test', () => {
     expect(screen.getByRole('button')).toBeDefined();
     expect(screen.getByText(/Name/i)).toBeDefined();
     expect(screen.getByText(/For public view/i)).toBeDefined();
+    expect(screen.getByText(/Status/i)).toBeDefined();
   });
 });
