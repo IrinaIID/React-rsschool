@@ -2,9 +2,7 @@ import React, { useState } from 'react';
 import './search-form.scss';
 import Search from '../../assets/img/search.png';
 
-
 export default function SearchForm() {
-
   const [text, setText] = useState(localStorage.getItem('inputText') || '');
 
   function handleChangeInput(e: React.FormEvent<HTMLInputElement>) {
@@ -15,7 +13,7 @@ export default function SearchForm() {
   function handleClickBtn(e: React.SyntheticEvent) {
     e.preventDefault();
     localStorage.clear();
-    setText('')
+    setText('');
   }
 
   return (
@@ -25,15 +23,11 @@ export default function SearchForm() {
           type="text"
           className="input-search"
           value={text}
-          onChange={e => handleChangeInput(e)}
+          onChange={(e) => handleChangeInput(e)}
         />
       </div>
       <div>
-        <button
-          onClick={e => handleClickBtn(e)}
-          type="submit"
-          className="search-btn"
-        >
+        <button onClick={(e) => handleClickBtn(e)} type="submit" className="search-btn">
           <img src={Search} alt="search" />
         </button>
       </div>

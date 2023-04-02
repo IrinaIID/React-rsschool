@@ -11,7 +11,7 @@ export type CardInfo = {
   name: string | undefined;
   date: string | undefined;
   status: string | undefined;
-  public: boolean | undefined;
+  public: string | undefined;
   gender: string | undefined;
   file: string | undefined;
   id: number;
@@ -30,4 +30,13 @@ export interface CardProps {
   picture: string;
   name: string;
   year: string;
+}
+
+export interface FormData {
+  name: string;
+  date: string;
+  status: string;
+  public: boolean;
+  gender: string;
+  picture: string;
 }

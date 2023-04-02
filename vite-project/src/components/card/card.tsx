@@ -1,8 +1,7 @@
 import { CardProps } from '../../utils/types/types';
 import './card.scss';
 
-export default function Card({picture, name, year}: CardProps) {
-
+export default function Card({ picture, name, year }: CardProps) {
   return (
     <div className="card-all">
       <div className="img-card-block">

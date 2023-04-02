@@ -1,7 +1,7 @@
 import Footer from '../../components/footer/footer';
 import Header from '../../components/heder/header';
 import './forms-page.scss';
-import CreateForm from '../../components/form/create-form-2';
+import CreateForm from '../../components/form/create-form';
 
 export default function FormsPage() {
   return (
