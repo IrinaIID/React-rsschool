@@ -26,6 +26,7 @@ export default function CreateForm() {
     };
     setArrCards([...arrCards, card]);
     reset();
+    alert('Card created successfully');
   });
 
   return (

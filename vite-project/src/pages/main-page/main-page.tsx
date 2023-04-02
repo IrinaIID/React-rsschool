@@ -11,7 +11,7 @@ export default function MainPage() {
       <Header />
       <div className="main">
         <div className="search-block">
-          <SearchForm text="" />
+          <SearchForm />
         </div>
         <div className="cards-block">
           {CARDS_INFO.map((card) => {
