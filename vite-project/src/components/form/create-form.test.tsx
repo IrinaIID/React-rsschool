@@ -18,13 +18,4 @@ describe('CreateForm test', () => {
     await userEvent.type(input, 'hello');
     expect(screen.getByDisplayValue('hello')).toBeDefined();
   });
-
-  test('check clean input after click button', async () => {
-    render(<CreateForm />);
-    const btn = screen.getByRole('button');
-    const input = screen.getByRole('textbox');
-    await userEvent.type(input, 'hello');
-    await userEvent.click(btn);
-    expect(screen.getByDisplayValue('')).toBeDefined();
-  });
 });

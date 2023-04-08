@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1680461334796" clover="3.2.0">
-  <project timestamp="1680461334797" name="All files">
-    <metrics statements="37" coveredstatements="29" conditionals="12" coveredconditionals="4" methods="21" coveredmethods="18" elements="70" coveredelements="51" complexity="0" loc="37" ncloc="37" packages="13" files="16" classes="16"/>
+<coverage generated="1680946377937" clover="3.2.0">
+  <project timestamp="1680946377938" name="All files">
+    <metrics statements="38" coveredstatements="29" conditionals="12" coveredconditionals="4" methods="21" coveredmethods="18" elements="71" coveredelements="51" complexity="0" loc="38" ncloc="38" packages="13" files="16" classes="16"/>
     <package name="src">
       <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="App.tsx" path="E:/1 ДИСК E/JavaScript/Stage-react/task-1/React-rsschool/vite-project/src/App.tsx">
@@ -28,9 +28,9 @@
       </file>
     </package>
     <package name="src.components.form">
-      <metrics statements="12" coveredstatements="5" conditionals="10" coveredconditionals="2" methods="4" coveredmethods="1"/>
+      <metrics statements="13" coveredstatements="5" conditionals="10" coveredconditionals="2" methods="4" coveredmethods="1"/>
       <file name="create-form.tsx" path="E:/1 ДИСК E/JavaScript/Stage-react/task-1/React-rsschool/vite-project/src/components/form/create-form.tsx">
-        <metrics statements="12" coveredstatements="5" conditionals="10" coveredconditionals="2" methods="4" coveredmethods="1"/>
+        <metrics statements="13" coveredstatements="5" conditionals="10" coveredconditionals="2" methods="4" coveredmethods="1"/>
         <line num="13" count="3" type="stmt"/>
         <line num="14" count="3" type="stmt"/>
         <line num="15" count="3" type="stmt"/>
@@ -38,11 +38,12 @@
         <line num="18" count="0" type="stmt"/>
         <line num="27" count="0" type="stmt"/>
         <line num="28" count="0" type="stmt"/>
-        <line num="31" count="3" type="stmt"/>
-        <line num="100" count="0" type="cond" truecount="0" falsecount="4"/>
-        <line num="101" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="32" count="3" type="stmt"/>
+        <line num="101" count="0" type="cond" truecount="0" falsecount="4"/>
         <line num="102" count="0" type="stmt"/>
-        <line num="114" count="0" type="stmt"/>
+        <line num="103" count="0" type="stmt"/>
+        <line num="115" count="0" type="stmt"/>
       </file>
     </package>
     <package name="src.components.heder">
