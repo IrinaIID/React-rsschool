@@ -1,0 +1,22 @@
+.main {
+  min-height: 100vh;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-block {
+  max-width: 1000px;
+  margin-top: 60px;
+}
+
+.cards-block {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+  margin-top: 100px;
+}
