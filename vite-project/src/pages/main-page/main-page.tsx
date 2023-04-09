@@ -31,21 +31,30 @@ interface ApiInfo {
 
 export default function MainPage() {
 
+  const [urlSearch, setUrlSearch] = useState('');
   const [cardsInfo, setCardsInfo] = useState<ApiInfo[]>([]);
   const [isModal, setIsModal] = useState(false);
   const [numCard, setNumCard] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
 
-
   useEffect(() => {
-    fetch(baseURL)
+    let url = baseURL
+    if (urlSearch !== '') {
+      url = `${baseURL}?name=${urlSearch}`
+    }
+    fetch(url)
       .then(response => response.json())
       .then(data => {
         console.log(data.results)
         setCardsInfo(data.results)
         setIsLoading(false)
     })
-  },[])
+  },[urlSearch])
+
+
+  function searchCards() {
+
+  }
 
   return (
     <div className="main-page-all">
@@ -56,10 +65,11 @@ export default function MainPage() {
       <Header />
       <div className="main">
         <div className="search-block">
-          <SearchForm />
+          <SearchForm setUrlForm={setUrlSearch} />
         </div>
         <div className="cards-block">
           {isLoading && <p className="p-loading">Loading...</p>}
+          {!cardsInfo && <p className="p-no-results">No search results found</p>}
           {cardsInfo && cardsInfo.map(card => {
             console.log(card.id)
             return (
