@@ -6,4 +6,6 @@ const ROUTES = {
 
 const URL_TO_SSEND = '';
 
-export { ROUTES, URL_TO_SSEND };
+const baseURL = 'https://rickandmortyapi.com/api/character/';
+
+export { ROUTES, URL_TO_SSEND, baseURL };

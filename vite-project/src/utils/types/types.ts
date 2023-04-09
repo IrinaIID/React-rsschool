@@ -40,3 +40,42 @@ export interface FormData {
   gender: string;
   picture: string;
 }
+
+export interface ApiInfo {
+  id: number;
+  name: string;
+  status: string;
+  species: string;
+  type: string;
+  gender: string;
+  origin: {
+    name: string;
+    url: string;
+  };
+  location: {
+    name: string;
+    url: string;
+  };
+  image: string;
+  pisode: string[];
+  url: string;
+  created: string;
+}
+
+export interface ApiCard {
+  isModal: (arg: boolean) => void;
+  numCard: (arg: number) => void;
+  id: number;
+  picture: string;
+  name: string;
+  species: string;
+}
+
+export interface UrlForm {
+  setUrlForm: (arg: string) => void;
+}
+
+export interface ModalCardProps {
+  isModal: (arg: boolean) => void;
+  modalId: number;
+}

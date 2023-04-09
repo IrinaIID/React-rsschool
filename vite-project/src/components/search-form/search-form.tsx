@@ -1,20 +1,13 @@
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import './search-form.scss';
 import Search from '../../assets/img/search.png';
+import { UrlForm } from '../../utils/types/types';
 
-
-interface UrlForm {
-  setUrlForm: (arg: string) => void
-}
-
-export default function SearchForm({ setUrlForm } : UrlForm) {
+export default function SearchForm({ setUrlForm }: UrlForm): JSX.Element {
   const [text, setText] = useState(localStorage.getItem('inputText') || '');
-  const inputRef = useRef<HTMLInputElement>(null);
-
 
   function handleChangeInput(e: React.FormEvent<HTMLInputElement>) {
     setText(e.currentTarget.value);
-    // setUrlForm(e.currentTarget.value);
     localStorage.setItem('inputText', e.currentTarget.value);
   }
 

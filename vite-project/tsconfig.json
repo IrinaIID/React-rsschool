@@ -18,6 +18,6 @@
     "baseUrl": "./src",
     "noImplicitAny": true
   },
-  "include": ["src"],
+  "include": ["src", "jest.setup.js", "mocks"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
