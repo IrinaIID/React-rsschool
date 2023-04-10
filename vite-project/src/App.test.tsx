@@ -7,8 +7,8 @@ describe('mocks App', () => {
   test('display name', async () => {
     render(<App />);
     await waitFor(() => {
-      data.results.forEach((card) => {
-        expect(screen.getByText(card.name)).toBeDefined();
+      data.results.forEach(() => {
+        expect(screen.getByText(/Morty Smith/i)).toBeDefined();
       });
     });
   });

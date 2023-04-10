@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">58.82% </span>
+                <span class="strong">93.33% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>10/17</span>
+                <span class='fraction'>14/15</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">40% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>2/5</span>
+                <span class='fraction'>5/5</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">58.82% </span>
+                <span class="strong">93.33% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>10/17</span>
+                <span class='fraction'>14/15</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line medium'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -125,8 +125,7 @@
 <a name='L60'></a><a href='#L60'>60</a>
 <a name='L61'></a><a href='#L61'>61</a>
 <a name='L62'></a><a href='#L62'>62</a>
-<a name='L63'></a><a href='#L63'>63</a>
-<a name='L64'></a><a href='#L64'>64</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L63'></a><a href='#L63'>63</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -137,28 +136,27 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -170,8 +168,8 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">20x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -198,6 +196,7 @@ import { useEffect, useState } from 'react';
 import ModalCard from '../../components/modal-card/modal-card';
 import { baseURL } from '../../utils/const/const';
 import { ApiInfo } from '../../utils/types/types';
+import 'isomorphic-fetch';
 &nbsp;
 export default function MainPage() {
   const [urlSearch, setUrlSearch] = useState('');
@@ -212,11 +211,10 @@ export default function MainPage() {
 <span class="cstat-no" title="statement not covered" >      url = `${baseURL}?name=${urlSearch}`;</span>
     }
     fetch(url)
-      .then(<span class="fstat-no" title="function not covered" >(r</span>esponse) =&gt; <span class="cstat-no" title="statement not covered" >response.json())</span>
-      .then(<span class="fstat-no" title="function not covered" >(d</span>ata) =&gt; {
-<span class="cstat-no" title="statement not covered" >        console.log(data.results);</span>
-<span class="cstat-no" title="statement not covered" >        setCardsInfo(data.results);</span>
-<span class="cstat-no" title="statement not covered" >        setIsLoading(false);</span>
+      .then((response) =&gt; response.json())
+      .then((data) =&gt; {
+        setCardsInfo(data.results);
+        setIsLoading(false);
       });
   }, [urlSearch]);
 &nbsp;
@@ -232,9 +230,8 @@ export default function MainPage() {
           {isLoading &amp;&amp; &lt;p className="p-loading"&gt;Loading...&lt;/p&gt;}
           {!cardsInfo &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >&lt;p className="p-no-results"&gt;Not found&lt;/p&gt;}</span>
           {cardsInfo &amp;&amp;
-            cardsInfo.map(<span class="fstat-no" title="function not covered" >(c</span>ard) =&gt; {
-<span class="cstat-no" title="statement not covered" >              console.log(card.id);</span>
-<span class="cstat-no" title="statement not covered" >              return (</span>
+            cardsInfo.map((card) =&gt; {
+              return (
                 &lt;ApiCards
                   isModal={setIsModal}
                   numCard={setNumCard}
@@ -259,7 +256,7 @@ export default function MainPage() {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-04-09T20:21:57.612Z
+                at 2023-04-10T19:20:32.619Z
             </div>
         <script src="../../../../prettify.js"></script>
         <script>

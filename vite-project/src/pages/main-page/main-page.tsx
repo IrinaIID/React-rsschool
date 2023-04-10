@@ -7,6 +7,7 @@ import { useEffect, useState } from 'react';
 import ModalCard from '../../components/modal-card/modal-card';
 import { baseURL } from '../../utils/const/const';
 import { ApiInfo } from '../../utils/types/types';
+import 'isomorphic-fetch';
 
 export default function MainPage() {
   const [urlSearch, setUrlSearch] = useState('');
