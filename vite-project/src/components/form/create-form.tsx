@@ -3,8 +3,17 @@ import VisitorCard from '../visitor-card/visitor-card';
 import './create-form.scss';
 import { CardInfo, FormData } from '../../utils/types/types';
 import { useState } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { addCardForm } from '../../store/cardsFormSlice';
+import { RootState } from 'store';
+
+
 
 export default function CreateForm() {
+
+  const arrCards = useSelector((state: RootState) => state.cardsFrom.cardsForm);
+  const dispatch = useDispatch();
+
   const {
     register,
     handleSubmit,
@@ -12,7 +21,8 @@ export default function CreateForm() {
     formState: { errors },
   } = useForm<FormData>();
   const [picture, setPicture] = useState('');
-  const [arrCards, setArrCards] = useState<CardInfo[]>([]);
+  // const [arrCards, setArrCards] = useState<CardInfo[]>([]);
+
 
   const onSubmit = handleSubmit((data) => {
     const card: CardInfo = {
@@ -24,7 +34,10 @@ export default function CreateForm() {
       file: picture,
       id: Math.random(),
     };
-    setArrCards([...arrCards, card]);
+
+    dispatch((addCardForm(card)));
+
+    // setArrCards([...arrCards, card]);
     reset();
     alert('Card created successfully');
   });
