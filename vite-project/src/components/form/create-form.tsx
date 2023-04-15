@@ -21,8 +21,6 @@ export default function CreateForm() {
     formState: { errors },
   } = useForm<FormData>();
   const [picture, setPicture] = useState('');
-  // const [arrCards, setArrCards] = useState<CardInfo[]>([]);
-
 
   const onSubmit = handleSubmit((data) => {
     const card: CardInfo = {
@@ -37,7 +35,6 @@ export default function CreateForm() {
 
     dispatch((addCardForm(card)));
 
-    // setArrCards([...arrCards, card]);
     reset();
     alert('Card created successfully');
   });
