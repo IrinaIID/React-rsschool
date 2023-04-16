@@ -25,28 +25,28 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/11</span>
+                <span class='fraction'>0/5</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/6</span>
-            </div>
-        
-            
-            <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
-                <span class="quiet">Functions</span>
                 <span class='fraction'>0/7</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>0/4</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/11</span>
+                <span class='fraction'>0/5</span>
             </div>
         
             
@@ -116,35 +116,13 @@
 <a name='L51'></a><a href='#L51'>51</a>
 <a name='L52'></a><a href='#L52'>52</a>
 <a name='L53'></a><a href='#L53'>53</a>
-<a name='L54'></a><a href='#L54'>54</a>
-<a name='L55'></a><a href='#L55'>55</a>
-<a name='L56'></a><a href='#L56'>56</a>
-<a name='L57'></a><a href='#L57'>57</a>
-<a name='L58'></a><a href='#L58'>58</a>
-<a name='L59'></a><a href='#L59'>59</a>
-<a name='L60'></a><a href='#L60'>60</a>
-<a name='L61'></a><a href='#L61'>61</a>
-<a name='L62'></a><a href='#L62'>62</a>
-<a name='L63'></a><a href='#L63'>63</a>
-<a name='L64'></a><a href='#L64'>64</a>
-<a name='L65'></a><a href='#L65'>65</a>
-<a name='L66'></a><a href='#L66'>66</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L54'></a><a href='#L54'>54</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -162,8 +140,6 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -195,21 +171,11 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import './modal-card.scss';
 import CloseImg from '../../assets/img/close.webp';
-import { useEffect, useState } from 'react';
-import { ApiInfo, ModalCardProps } from '../../utils/types/types';
+import { ModalCardProps } from '../../utils/types/types';
+import { useGetModalCardQuery } from '../../store/modalApi';
 &nbsp;
 export default function <span class="fstat-no" title="function not covered" >ModalCard({</span> isModal, modalId }: ModalCardProps) {
-  const [cardModal, setCardModal] = <span class="cstat-no" title="statement not covered" >useState&lt;ApiInfo&gt;();</span>
-  const [isLoading, setIsLoading] = <span class="cstat-no" title="statement not covered" >useState(true);</span>
-&nbsp;
-<span class="cstat-no" title="statement not covered" >  useEffect(<span class="fstat-no" title="function not covered" >() =&gt; {</span></span>
-<span class="cstat-no" title="statement not covered" >    fetch(`https://rickandmortyapi.com/api/character/${modalId}`)</span>
-      .then(<span class="fstat-no" title="function not covered" >(r</span>esponse) =&gt; <span class="cstat-no" title="statement not covered" >response.json())</span>
-      .then(<span class="fstat-no" title="function not covered" >(d</span>ata) =&gt; {
-<span class="cstat-no" title="statement not covered" >        setCardModal(data);</span>
-<span class="cstat-no" title="statement not covered" >        setIsLoading(false);</span>
-      });
-  }, [modalId]);
+  const { data = <span class="branch-0 cbranch-no" title="branch not covered" >{}, i</span>sLoading } = <span class="cstat-no" title="statement not covered" >useGetModalCardQuery(modalId);</span>
 &nbsp;
 <span class="cstat-no" title="statement not covered" >  return (</span>
     &lt;div className="card-modal-all" onClick={<span class="fstat-no" title="function not covered" >() =&gt; <span class="cstat-no" title="statement not covered" >i</span>sModal(false)}&gt;</span>
@@ -220,7 +186,7 @@ export default function <span class="fstat-no" title="function not covered" >Mod
             {' '}
             &lt;div className="modal-img-close-block"&gt;
               &lt;div className="img-block"&gt;
-                &lt;img src={cardModal?.image} alt="character" className="img-modal" /&gt;
+                &lt;img src={data?.image} alt="character" className="img-modal" /&gt;
               &lt;/div&gt;
               &lt;img
                 src={CloseImg}
@@ -231,25 +197,23 @@ export default function <span class="fstat-no" title="function not covered" >Mod
             &lt;/div&gt;
             &lt;div className="modal-description-block"&gt;
               &lt;p className="p-info"&gt;
-                name: &lt;span className="span-info"&gt;{cardModal?.name}&lt;/span&gt;
+                name: &lt;span className="span-info"&gt;{data?.name}&lt;/span&gt;
               &lt;/p&gt;
               &lt;p className="p-info"&gt;
-                status: &lt;span className="span-info"&gt;{cardModal?.status}&lt;/span&gt;
+                status: &lt;span className="span-info"&gt;{data?.status}&lt;/span&gt;
               &lt;/p&gt;
               &lt;p className="p-info"&gt;
-                species: &lt;span className="span-info"&gt;{cardModal?.species}&lt;/span&gt;
+                species: &lt;span className="span-info"&gt;{data?.species}&lt;/span&gt;
               &lt;/p&gt;
               &lt;p className="p-info"&gt;
                 type:{' '}
-                &lt;span className="span-info"&gt;
-                  {cardModal?.type === '' ? 'unknown' : cardModal?.type}
-                &lt;/span&gt;
+                &lt;span className="span-info"&gt;{data?.type === '' ? 'unknown' : data?.type}&lt;/span&gt;
               &lt;/p&gt;
               &lt;p className="p-info"&gt;
-                gender: &lt;span className="span-info"&gt;{cardModal?.gender}&lt;/span&gt;
+                gender: &lt;span className="span-info"&gt;{data?.gender}&lt;/span&gt;
               &lt;/p&gt;
               &lt;p className="p-info"&gt;
-                origin: &lt;span className="span-info"&gt;{cardModal?.origin.name}&lt;/span&gt;
+                origin: &lt;span className="span-info"&gt;{data?.origin.name}&lt;/span&gt;
               &lt;/p&gt;
             &lt;/div&gt;{' '}
           &lt;/div&gt;
@@ -265,7 +229,7 @@ export default function <span class="fstat-no" title="function not covered" >Mod
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-04-16T16:26:24.102Z
+                at 2023-04-16T18:05:39.837Z
             </div>
         <script src="../../../../prettify.js"></script>
         <script>
