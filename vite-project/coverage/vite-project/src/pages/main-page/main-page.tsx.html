@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">93.33% </span>
+                <span class="strong">12.5% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>14/15</span>
+                <span class='fraction'>1/8</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">63.63% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>7/11</span>
+                <span class='fraction'>0/9</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">33.33% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>5/5</span>
+                <span class='fraction'>1/3</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">93.33% </span>
+                <span class="strong">14.28% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>14/15</span>
+                <span class='fraction'>1/7</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line high'></div>
+    <div class='status-line low'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -114,18 +114,7 @@
 <a name='L49'></a><a href='#L49'>49</a>
 <a name='L50'></a><a href='#L50'>50</a>
 <a name='L51'></a><a href='#L51'>51</a>
-<a name='L52'></a><a href='#L52'>52</a>
-<a name='L53'></a><a href='#L53'>53</a>
-<a name='L54'></a><a href='#L54'>54</a>
-<a name='L55'></a><a href='#L55'>55</a>
-<a name='L56'></a><a href='#L56'>56</a>
-<a name='L57'></a><a href='#L57'>57</a>
-<a name='L58'></a><a href='#L58'>58</a>
-<a name='L59'></a><a href='#L59'>59</a>
-<a name='L60'></a><a href='#L60'>60</a>
-<a name='L61'></a><a href='#L61'>61</a>
-<a name='L62'></a><a href='#L62'>62</a>
-<a name='L63'></a><a href='#L63'>63</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L52'></a><a href='#L52'>52</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -137,26 +126,16 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -168,8 +147,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">20x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -192,57 +170,46 @@ import Footer from '../../components/footer/footer';
 import './main-page.scss';
 import SearchForm from '../../components/search-form/search-form';
 import ApiCards from '../../components/api-cards/api-cards';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import ModalCard from '../../components/modal-card/modal-card';
-import { baseURL } from '../../utils/const/const';
 import { ApiInfo } from '../../utils/types/types';
+import { useGetCardsMainQuery } from '../../store/cardsMainApi';
 import 'isomorphic-fetch';
+import { useSelector } from 'react-redux';
+import { RootState } from 'store';
 &nbsp;
 export default function MainPage() {
-  const [urlSearch, setUrlSearch] = useState('');
-  const [cardsInfo, setCardsInfo] = useState&lt;ApiInfo[]&gt;([]);
-  const [isModal, setIsModal] = useState(false);
-  const [numCard, setNumCard] = useState(0);
-  const [isLoading, setIsLoading] = useState(true);
 &nbsp;
-  useEffect(() =&gt; {
-    let url = baseURL;
-    <span class="missing-if-branch" title="if path not taken" >I</span>if (urlSearch !== '') {
-<span class="cstat-no" title="statement not covered" >      url = `${baseURL}?name=${urlSearch}`;</span>
-    }
-    fetch(url)
-      .then((response) =&gt; response.json())
-      .then((data) =&gt; {
-        setCardsInfo(data.results);
-        setIsLoading(false);
-      });
-  }, [urlSearch]);
+  const text = useSelector(<span class="fstat-no" title="function not covered" >(s</span>tate: RootState) =&gt; <span class="cstat-no" title="statement not covered" >state.textInput.textInput)</span>;
+  const {data = <span class="branch-0 cbranch-no" title="branch not covered" >[], i</span>sLoading} = <span class="cstat-no" title="statement not covered" >useGetCardsMainQuery(text);</span>
+<span class="cstat-no" title="statement not covered" >  console.log(data);</span>
+  const [isModal, setIsModal] = <span class="cstat-no" title="statement not covered" >useState(false);</span>
+  const [numCard, setNumCard] = <span class="cstat-no" title="statement not covered" >useState(0);</span>
 &nbsp;
-  return (
+<span class="cstat-no" title="statement not covered" >  return (</span>
     &lt;div className="main-page-all"&gt;
-      {isModal &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >cardsInfo &amp;&amp; <span class="branch-2 cbranch-no" title="branch not covered" >&lt;</span>ModalCard isModal={setIsModal} modalId={numCard} /&gt;}</span>
+      {isModal &amp;&amp; &lt;ModalCard isModal={setIsModal} modalId={numCard} /&gt;}
       &lt;Header /&gt;
       &lt;div className="main"&gt;
         &lt;div className="search-block"&gt;
-          &lt;SearchForm setUrlForm={setUrlSearch} /&gt;
+          &lt;SearchForm /&gt;
         &lt;/div&gt;
         &lt;div className="cards-block"&gt;
           {isLoading &amp;&amp; &lt;p className="p-loading"&gt;Loading...&lt;/p&gt;}
-          {!cardsInfo &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >&lt;p className="p-no-results"&gt;Not found&lt;/p&gt;}</span>
-          {cardsInfo &amp;&amp;
-            cardsInfo.map((card) =&gt; {
-              return (
-                &lt;ApiCards
-                  isModal={setIsModal}
-                  numCard={setNumCard}
-                  picture={card.image}
-                  name={card.name}
-                  species={card.species}
-                  id={card.id}
-                  key={card.id}
-                /&gt;
-              );
-            })}
+          {!data.results &amp;&amp; &lt;p className="p-no-results"&gt;Not found&lt;/p&gt;}
+          { data.results &amp;&amp; data.results.map(<span class="fstat-no" title="function not covered" >(c</span>ard: ApiInfo) =&gt; {
+<span class="cstat-no" title="statement not covered" >            return (</span>
+              &lt;ApiCards
+                isModal={setIsModal}
+                numCard={setNumCard}
+                picture={card.image}
+                name={card.name}
+                species={card.species}
+                id={card.id}
+                key={card.id}
+              /&gt;
+            );
+          })}
         &lt;/div&gt;
       &lt;/div&gt;
       &lt;Footer /&gt;
@@ -256,7 +223,7 @@ export default function MainPage() {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-04-11T12:26:13.294Z
+                at 2023-04-16T16:26:24.102Z
             </div>
         <script src="../../../../prettify.js"></script>
         <script>

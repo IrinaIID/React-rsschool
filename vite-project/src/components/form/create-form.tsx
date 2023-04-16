@@ -7,10 +7,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { addCardForm } from '../../store/cardsFormSlice';
 import { RootState } from 'store';
 
-
-
 export default function CreateForm() {
-
   const arrCards = useSelector((state: RootState) => state.cardsFrom.cardsForm);
   const dispatch = useDispatch();
 
@@ -27,13 +24,13 @@ export default function CreateForm() {
       name: data.name,
       date: data.date,
       status: data.status,
-      public: data.status,
+      public: data.public,
       gender: data.gender,
       file: picture,
       id: Math.random(),
     };
 
-    dispatch((addCardForm(card)));
+    dispatch(addCardForm(card));
 
     reset();
     alert('Card created successfully');

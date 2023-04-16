@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">38.46% </span>
+                <span class="strong">6.66% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>5/13</span>
+                <span class='fraction'>1/15</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>0/10</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">20% </span>
-                <span class="quiet">Branches</span>
-                <span class='fraction'>2/10</span>
-            </div>
-        
-            
-            <div class='fl pad1y space-right2'>
-                <span class="strong">25% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/4</span>
+                <span class='fraction'>1/5</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">38.46% </span>
+                <span class="strong">7.14% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>5/13</span>
+                <span class='fraction'>1/14</span>
             </div>
         
             
@@ -193,7 +193,17 @@
 <a name='L128'></a><a href='#L128'>128</a>
 <a name='L129'></a><a href='#L129'>129</a>
 <a name='L130'></a><a href='#L130'>130</a>
-<a name='L131'></a><a href='#L131'>131</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L131'></a><a href='#L131'>131</a>
+<a name='L132'></a><a href='#L132'>132</a>
+<a name='L133'></a><a href='#L133'>133</a>
+<a name='L134'></a><a href='#L134'>134</a>
+<a name='L135'></a><a href='#L135'>135</a>
+<a name='L136'></a><a href='#L136'>136</a>
+<a name='L137'></a><a href='#L137'>137</a>
+<a name='L138'></a><a href='#L138'>138</a>
+<a name='L139'></a><a href='#L139'>139</a>
+<a name='L140'></a><a href='#L140'>140</a>
+<a name='L141'></a><a href='#L141'>141</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -205,11 +215,19 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">14x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -219,12 +237,14 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -328,33 +348,43 @@ import VisitorCard from '../visitor-card/visitor-card';
 import './create-form.scss';
 import { CardInfo, FormData } from '../../utils/types/types';
 import { useState } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { addCardForm } from '../../store/cardsFormSlice';
+import { RootState } from 'store';
+&nbsp;
+&nbsp;
 &nbsp;
 export default function CreateForm() {
+&nbsp;
+  const arrCards = useSelector(<span class="fstat-no" title="function not covered" >(s</span>tate: RootState) =&gt; <span class="cstat-no" title="statement not covered" >state.cardsFrom.cardsForm)</span>;
+  const dispatch = <span class="cstat-no" title="statement not covered" >useDispatch();</span>
+&nbsp;
   const {
     register,
     handleSubmit,
     reset,
     formState: { errors },
-  } = useForm&lt;FormData&gt;();
-  const [picture, setPicture] = useState('');
-  const [arrCards, setArrCards] = useState&lt;CardInfo[]&gt;([]);
+  } = <span class="cstat-no" title="statement not covered" >useForm&lt;FormData&gt;();</span>
+  const [picture, setPicture] = <span class="cstat-no" title="statement not covered" >useState('');</span>
 &nbsp;
-  const onSubmit = handleSubmit(<span class="fstat-no" title="function not covered" >(d</span>ata) =&gt; {
+  const onSubmit = <span class="cstat-no" title="statement not covered" >handleSubmit(<span class="fstat-no" title="function not covered" >(d</span>ata) =&gt; {</span>
     const card: CardInfo = <span class="cstat-no" title="statement not covered" >{</span>
       name: data.name,
       date: data.date,
       status: data.status,
-      public: data.status,
+      public: data.public,
       gender: data.gender,
       file: picture,
       id: Math.random(),
     };
-<span class="cstat-no" title="statement not covered" >    setArrCards([...arrCards, card]);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    dispatch((addCardForm(card)));</span>
+&nbsp;
 <span class="cstat-no" title="statement not covered" >    reset();</span>
 <span class="cstat-no" title="statement not covered" >    alert('Card created successfully');</span>
   });
 &nbsp;
-  return (
+<span class="cstat-no" title="statement not covered" >  return (</span>
     &lt;div className="form-page-all" onSubmit={onSubmit}&gt;
       &lt;form className="all-form"&gt;
         &lt;h1 className="h1-form"&gt;Create visitor card&lt;/h1&gt;
@@ -362,7 +392,7 @@ export default function CreateForm() {
           Name:
           &lt;input
             type="text"
-            className={errors.name ? <span class="branch-0 cbranch-no" title="branch not covered" >'input-name-error' : '</span>input-name'}
+            className={errors.name ? 'input-name-error' : 'input-name'}
             {...register('name', {
               required: 'This is required',
               minLength: { value: 4, message: 'Min length is 4' },
@@ -375,7 +405,7 @@ export default function CreateForm() {
           Date of card creation:
           &lt;input
             type="date"
-            className={errors.date ? <span class="branch-0 cbranch-no" title="branch not covered" >'input-date-error' : '</span>input-date'}
+            className={errors.date ? 'input-date-error' : 'input-date'}
             {...register('date', { required: 'This is required' })}
           /&gt;
           &lt;p className="p-input-error"&gt;{errors.date?.message}&lt;/p&gt;
@@ -460,7 +490,7 @@ export default function CreateForm() {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-04-11T12:26:13.294Z
+                at 2023-04-16T16:26:24.102Z
             </div>
         <script src="../../../../prettify.js"></script>
         <script>

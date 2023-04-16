@@ -1,33 +1,27 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './search-form.scss';
 import Search from '../../assets/img/search.png';
-import { UrlForm } from '../../utils/types/types';
+import { useDispatch } from 'react-redux';
+import { addTextFromInput } from '../../store/textInputSlice';
 
-export default function SearchForm({ setUrlForm }: UrlForm): JSX.Element {
-  const [text, setText] = useState(localStorage.getItem('inputText') || '');
+export default function SearchForm() {
+  const dispatch = useDispatch();
+  let textInput: string;
 
   function handleChangeInput(e: React.FormEvent<HTMLInputElement>) {
-    setText(e.currentTarget.value);
-    localStorage.setItem('inputText', e.currentTarget.value);
+    console.log(e.currentTarget.value);
+    textInput = e.currentTarget.value;
   }
 
   function handleClickBtn(e: React.SyntheticEvent) {
     e.preventDefault();
-    localStorage.clear();
-    const inputText = text;
-    setUrlForm(inputText);
-    setText('');
+    dispatch(addTextFromInput(textInput));
   }
 
   return (
     <form className="search-form-all">
       <div>
-        <input
-          type="text"
-          className="input-search"
-          value={text}
-          onChange={(e) => handleChangeInput(e)}
-        />
+        <input type="text" className="input-search" onChange={(e) => handleChangeInput(e)} />
       </div>
       <div>
         <button onClick={(e) => handleClickBtn(e)} type="submit" className="search-btn">

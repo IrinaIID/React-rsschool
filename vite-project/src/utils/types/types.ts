@@ -11,7 +11,7 @@ export type CardInfo = {
   name: string | undefined;
   date: string | undefined;
   status: string | undefined;
-  public: string | undefined;
+  public: boolean | undefined;
   gender: string | undefined;
   file: string | undefined;
   id: number;

@@ -3,45 +3,35 @@ import Footer from '../../components/footer/footer';
 import './main-page.scss';
 import SearchForm from '../../components/search-form/search-form';
 import ApiCards from '../../components/api-cards/api-cards';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import ModalCard from '../../components/modal-card/modal-card';
-import { baseURL } from '../../utils/const/const';
 import { ApiInfo } from '../../utils/types/types';
+import { useGetCardsMainQuery } from '../../store/cardsMainApi';
 import 'isomorphic-fetch';
+import { useSelector } from 'react-redux';
+import { RootState } from 'store';
 
 export default function MainPage() {
-  const [urlSearch, setUrlSearch] = useState('');
-  const [cardsInfo, setCardsInfo] = useState<ApiInfo[]>([]);
+  const text = useSelector((state: RootState) => state.textInput.textInput);
+  const { data = [], isLoading, error } = useGetCardsMainQuery(text);
+  console.log(data);
   const [isModal, setIsModal] = useState(false);
   const [numCard, setNumCard] = useState(0);
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    let url = baseURL;
-    if (urlSearch !== '') {
-      url = `${baseURL}?name=${urlSearch}`;
-    }
-    fetch(url)
-      .then((response) => response.json())
-      .then((data) => {
-        setCardsInfo(data.results);
-        setIsLoading(false);
-      });
-  }, [urlSearch]);
 
   return (
     <div className="main-page-all">
-      {isModal && cardsInfo && <ModalCard isModal={setIsModal} modalId={numCard} />}
+      {isModal && <ModalCard isModal={setIsModal} modalId={numCard} />}
       <Header />
       <div className="main">
         <div className="search-block">
-          <SearchForm setUrlForm={setUrlSearch} />
+          <SearchForm />
         </div>
         <div className="cards-block">
           {isLoading && <p className="p-loading">Loading...</p>}
-          {!cardsInfo && <p className="p-no-results">Not found</p>}
-          {cardsInfo &&
-            cardsInfo.map((card) => {
+          {error && <p className="p-no-results">Not found</p>}
+          {!error &&
+            data.results &&
+            data.results.map((card: ApiInfo) => {
               return (
                 <ApiCards
                   isModal={setIsModal}
