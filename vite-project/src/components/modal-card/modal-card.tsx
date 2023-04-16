@@ -1,20 +1,10 @@
 import './modal-card.scss';
 import CloseImg from '../../assets/img/close.webp';
-import { useEffect, useState } from 'react';
-import { ApiInfo, ModalCardProps } from '../../utils/types/types';
+import { ModalCardProps } from '../../utils/types/types';
+import { useGetModalCardQuery } from '../../store/modalApi';
 
 export default function ModalCard({ isModal, modalId }: ModalCardProps) {
-  const [cardModal, setCardModal] = useState<ApiInfo>();
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    fetch(`https://rickandmortyapi.com/api/character/${modalId}`)
-      .then((response) => response.json())
-      .then((data) => {
-        setCardModal(data);
-        setIsLoading(false);
-      });
-  }, [modalId]);
+  const { data = {}, isLoading } = useGetModalCardQuery(modalId);
 
   return (
     <div className="card-modal-all" onClick={() => isModal(false)}>
@@ -25,7 +15,7 @@ export default function ModalCard({ isModal, modalId }: ModalCardProps) {
             {' '}
             <div className="modal-img-close-block">
               <div className="img-block">
-                <img src={cardModal?.image} alt="character" className="img-modal" />
+                <img src={data?.image} alt="character" className="img-modal" />
               </div>
               <img
                 src={CloseImg}
@@ -36,25 +26,23 @@ export default function ModalCard({ isModal, modalId }: ModalCardProps) {
             </div>
             <div className="modal-description-block">
               <p className="p-info">
-                name: <span className="span-info">{cardModal?.name}</span>
+                name: <span className="span-info">{data?.name}</span>
               </p>
               <p className="p-info">
-                status: <span className="span-info">{cardModal?.status}</span>
+                status: <span className="span-info">{data?.status}</span>
               </p>
               <p className="p-info">
-                species: <span className="span-info">{cardModal?.species}</span>
+                species: <span className="span-info">{data?.species}</span>
               </p>
               <p className="p-info">
                 type:{' '}
-                <span className="span-info">
-                  {cardModal?.type === '' ? 'unknown' : cardModal?.type}
-                </span>
+                <span className="span-info">{data?.type === '' ? 'unknown' : data?.type}</span>
               </p>
               <p className="p-info">
-                gender: <span className="span-info">{cardModal?.gender}</span>
+                gender: <span className="span-info">{data?.gender}</span>
               </p>
               <p className="p-info">
-                origin: <span className="span-info">{cardModal?.origin.name}</span>
+                origin: <span className="span-info">{data?.origin.name}</span>
               </p>
             </div>{' '}
           </div>

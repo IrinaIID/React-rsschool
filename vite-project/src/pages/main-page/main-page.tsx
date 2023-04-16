@@ -14,7 +14,6 @@ import { RootState } from 'store';
 export default function MainPage() {
   const text = useSelector((state: RootState) => state.textInput.textInput);
   const { data = [], isLoading, error } = useGetCardsMainQuery(text);
-  console.log(data);
   const [isModal, setIsModal] = useState(false);
   const [numCard, setNumCard] = useState(0);
 

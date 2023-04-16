@@ -9,7 +9,6 @@ export default function SearchForm() {
   let textInput: string;
 
   function handleChangeInput(e: React.FormEvent<HTMLInputElement>) {
-    console.log(e.currentTarget.value);
     textInput = e.currentTarget.value;
   }
 
