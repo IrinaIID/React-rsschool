@@ -3,10 +3,12 @@ import cardsFormReducer from './cardsFormSlice';
 import { cardsMainApi } from './cardsMainApi';
 import { modalApi } from './modalApi';
 import textInputReduser from './textInputSlice';
+import textQuerySlice from './testQuery';
 
 export const store = configureStore({
   reducer: {
     textInput: textInputReduser,
+    textQuery: textQuerySlice,
     cardsFrom: cardsFormReducer,
     cardsMainApi: cardsMainApi.reducer,
     modalApi: modalApi.reducer,
