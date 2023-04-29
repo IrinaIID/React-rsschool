@@ -9,7 +9,7 @@ import { ApiInfo } from '../../utils/types/types';
 import { useGetCardsMainQuery } from '../../store/cardsMainApi';
 import 'isomorphic-fetch';
 import { useSelector } from 'react-redux';
-import { RootState } from 'store';
+import { RootState } from '../../store';
 
 export default function MainPage() {
   const textQuery = useSelector((state: RootState) => state.textQuery.textQuery);
