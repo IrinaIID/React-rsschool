@@ -4,7 +4,6 @@ export const modalApi = createApi({
   reducerPath: 'modalApi',
   baseQuery: fetchBaseQuery({
     baseUrl: 'https://rickandmortyapi.com/api/character',
-    fetchFn: fetch,
   }),
   endpoints: (build) => ({
     getModalCard: build.query({
