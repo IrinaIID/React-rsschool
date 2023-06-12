@@ -1,0 +1,765 @@
+{
+  "\u0000E:/1 ДИСК E/JavaScript/Stage-react/task-1/React-rsschool/vite-ssr/node_modules/hoist-non-react-statics/node_modules/react-is/cjs/react-is.production.min.js?commonjs-exports": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "\u0000E:/1 ДИСК E/JavaScript/Stage-react/task-1/React-rsschool/vite-ssr/node_modules/hoist-non-react-statics/node_modules/react-is/index.js?commonjs-module": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "\u0000E:/1 ДИСК E/JavaScript/Stage-react/task-1/React-rsschool/vite-ssr/node_modules/react-dom/cjs/react-dom.production.min.js?commonjs-exports": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "\u0000E:/1 ДИСК E/JavaScript/Stage-react/task-1/React-rsschool/vite-ssr/node_modules/react-dom/client.js?commonjs-exports": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "\u0000E:/1 ДИСК E/JavaScript/Stage-react/task-1/React-rsschool/vite-ssr/node_modules/react-dom/index.js?commonjs-module": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "\u0000E:/1 ДИСК E/JavaScript/Stage-react/task-1/React-rsschool/vite-ssr/node_modules/react-redux/node_modules/react-is/cjs/react-is.production.min.js?commonjs-exports": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "\u0000E:/1 ДИСК E/JavaScript/Stage-react/task-1/React-rsschool/vite-ssr/node_modules/react-redux/node_modules/react-is/index.js?commonjs-module": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "\u0000E:/1 ДИСК E/JavaScript/Stage-react/task-1/React-rsschool/vite-ssr/node_modules/react/cjs/react-jsx-runtime.production.min.js?commonjs-exports": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "\u0000E:/1 ДИСК E/JavaScript/Stage-react/task-1/React-rsschool/vite-ssr/node_modules/react/cjs/react.production.min.js?commonjs-exports": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "\u0000E:/1 ДИСК E/JavaScript/Stage-react/task-1/React-rsschool/vite-ssr/node_modules/react/index.js?commonjs-module": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "\u0000E:/1 ДИСК E/JavaScript/Stage-react/task-1/React-rsschool/vite-ssr/node_modules/react/jsx-runtime.js?commonjs-module": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "\u0000E:/1 ДИСК E/JavaScript/Stage-react/task-1/React-rsschool/vite-ssr/node_modules/scheduler/cjs/scheduler.production.min.js?commonjs-exports": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "\u0000E:/1 ДИСК E/JavaScript/Stage-react/task-1/React-rsschool/vite-ssr/node_modules/scheduler/index.js?commonjs-module": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "\u0000E:/1 ДИСК E/JavaScript/Stage-react/task-1/React-rsschool/vite-ssr/node_modules/use-sync-external-store/cjs/use-sync-external-store-shim.production.min.js?commonjs-exports": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "\u0000E:/1 ДИСК E/JavaScript/Stage-react/task-1/React-rsschool/vite-ssr/node_modules/use-sync-external-store/cjs/use-sync-external-store-shim/with-selector.production.min.js?commonjs-exports": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "\u0000E:/1 ДИСК E/JavaScript/Stage-react/task-1/React-rsschool/vite-ssr/node_modules/use-sync-external-store/shim/index.js?commonjs-module": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "\u0000E:/1 ДИСК E/JavaScript/Stage-react/task-1/React-rsschool/vite-ssr/node_modules/use-sync-external-store/shim/with-selector.js?commonjs-module": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "\u0000commonjsHelpers.js": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "\u0000react/jsx-runtime": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "\u0000vite/modulepreload-polyfill": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "index.html": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "node_modules/@babel/runtime/helpers/esm/defineProperty.js": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "node_modules/@babel/runtime/helpers/esm/objectSpread2.js": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "node_modules/@babel/runtime/helpers/esm/toPrimitive.js": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "node_modules/@babel/runtime/helpers/esm/toPropertyKey.js": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "node_modules/@babel/runtime/helpers/esm/typeof.js": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "node_modules/@reduxjs/toolkit/dist/query/react/rtk-query-react.esm.js": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "node_modules/@reduxjs/toolkit/dist/query/rtk-query.esm.js": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "node_modules/@reduxjs/toolkit/dist/redux-toolkit.esm.js": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "node_modules/@remix-run/router/dist/router.js": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "node_modules/hoist-non-react-statics/node_modules/react-is/cjs/react-is.production.min.js": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "node_modules/hoist-non-react-statics/node_modules/react-is/index.js": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "node_modules/immer/dist/immer.esm.mjs": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "node_modules/isomorphic-fetch/fetch-npm-browserify.js": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "node_modules/react-dom/cjs/react-dom.production.min.js": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "node_modules/react-dom/client.js": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "node_modules/react-dom/index.js": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "node_modules/react-hook-form/dist/index.esm.mjs": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "node_modules/react-redux/es/components/Context.js": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "node_modules/react-redux/es/components/Provider.js": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "node_modules/react-redux/es/hooks/useDispatch.js": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "node_modules/react-redux/es/hooks/useReduxContext.js": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "node_modules/react-redux/es/hooks/useSelector.js": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "node_modules/react-redux/es/hooks/useStore.js": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "node_modules/react-redux/es/index.js": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "node_modules/react-redux/es/utils/Subscription.js": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "node_modules/react-redux/es/utils/batch.js": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "node_modules/react-redux/es/utils/shallowEqual.js": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "node_modules/react-redux/es/utils/useIsomorphicLayoutEffect.js": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "node_modules/react-redux/es/utils/useSyncExternalStore.js": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "node_modules/react-redux/node_modules/react-is/cjs/react-is.production.min.js": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "node_modules/react-redux/node_modules/react-is/index.js": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "node_modules/react-router-dom/dist/index.js": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "node_modules/react-router/dist/index.js": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "node_modules/react/cjs/react-jsx-runtime.production.min.js": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "node_modules/react/cjs/react.production.min.js": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "node_modules/react/index.js": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "node_modules/react/jsx-runtime.js": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "node_modules/redux-thunk/es/index.js": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "node_modules/redux/es/redux.js": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "node_modules/reselect/es/defaultMemoize.js": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "node_modules/reselect/es/index.js": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "node_modules/scheduler/cjs/scheduler.production.min.js": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "node_modules/scheduler/index.js": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "node_modules/use-sync-external-store/cjs/use-sync-external-store-shim.production.min.js": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "node_modules/use-sync-external-store/cjs/use-sync-external-store-shim/with-selector.production.min.js": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "node_modules/use-sync-external-store/shim/index.js": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "node_modules/use-sync-external-store/shim/with-selector.js": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "node_modules/whatwg-fetch/fetch.js": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "src/App.scss": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "src/App.tsx": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "src/assets/img/close.webp": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "src/assets/img/error-img.webp": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "src/assets/img/search.png": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "src/components/api-cards/api-cards.scss": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "src/components/api-cards/api-cards.tsx": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "src/components/footer/footer.scss": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "src/components/footer/footer.tsx": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "src/components/form/create-form.scss": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "src/components/form/create-form.tsx": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "src/components/heder/decoration-header.tsx": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "src/components/heder/header.scss": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "src/components/heder/header.tsx": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "src/components/heder/navigation-header.tsx": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "src/components/modal-card/modal-card.scss": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "src/components/modal-card/modal-card.tsx": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "src/components/search-form/search-form.scss": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "src/components/search-form/search-form.tsx": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "src/components/visitor-card/visitor-card.scss": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "src/components/visitor-card/visitor-card.tsx": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "src/entry-client.tsx": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "src/index.css": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "src/pages/404-page/404-page.scss": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "src/pages/404-page/404-page.tsx": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "src/pages/about-page/about-page.scss": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "src/pages/about-page/about-page.tsx": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "src/pages/forms-page/forms-page.scss": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "src/pages/forms-page/forms-page.tsx": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "src/pages/main-page/main-page.scss": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "src/pages/main-page/main-page.tsx": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "src/store/cardsFormSlice.ts": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "src/store/cardsMainApi.ts": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "src/store/index.ts": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "src/store/modalApi.ts": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "src/store/testQuery.ts": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "src/store/textInputSlice.ts": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "src/styles/entry.scss": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ],
+  "src/utils/const/const.ts": [
+    "/assets/error-img-e57a91c3.webp",
+    "/assets/italiana-regular-0e5bbbc1.woff2",
+    "/assets/italiana-regular-152962a2.woff",
+    "/assets/open-sans-8c493c16.woff2",
+    "/assets/open-sans-6618be87.woff"
+  ]
+}
