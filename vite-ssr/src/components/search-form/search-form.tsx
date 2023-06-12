@@ -4,7 +4,7 @@ import Search from '../../assets/img/search.png';
 import { useDispatch, useSelector } from 'react-redux';
 import { addTextFromInput } from '../../store/textInputSlice';
 import { addTextQuery } from '../../store/testQuery';
-import { RootState } from 'store';
+import { RootState } from '../../store/index';
 
 export default function SearchForm() {
   const text = useSelector((state: RootState) => state.textInput.textInput);
